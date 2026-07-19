@@ -3,6 +3,9 @@
    Token source: kimi-design-skill references/tokens.json
    ============================================================ */
 
+/* 内联 Logo（data URI，免外部请求，移动端必加载） */
+@import "./assets/logo-datauri.css";
+
 :root {
   /* color.labels */
   --label-primary: rgba(0, 0, 0, 0.9);
@@ -68,7 +71,11 @@ body {
   font-size: 16px;
   line-height: 24px;
   -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
 }
+
+/* 防止移动端横向溢出（clip 不创建滚动容器，不影响 sticky 顶栏） */
+html, body { overflow-x: clip; }
 
 ::selection { background: rgba(23, 131, 255, 0.2); }
 
@@ -126,8 +133,6 @@ img { max-width: 100%; display: block; }
   line-height: 24px;
   white-space: nowrap;
 }
-
-.brand-logo { width: 30px; height: 30px; object-fit: contain; flex: none; }
 
 .brand-slash { color: var(--label-quaternary); font-weight: 400; }
 
@@ -917,7 +922,7 @@ img { max-width: 100%; display: block; }
   font-weight: 600;
 }
 
-.compare-head .col-x img { width: 20px; height: 20px; object-fit: contain; }
+.compare-head .col-x .logo-img { flex: none; }
 
 .compare-row .dim { color: var(--label-tertiary); }
 
@@ -1114,8 +1119,6 @@ img { max-width: 100%; display: block; }
 }
 
 .cta-logo {
-  width: 72px; height: 72px;
-  object-fit: contain;
   margin-bottom: 32px;
   filter: drop-shadow(0 4px 16px rgba(0, 0, 0, 0.25));
 }
@@ -1159,18 +1162,10 @@ img { max-width: 100%; display: block; }
   line-height: 20px;
 }
 
-.footer-brand .brand-logo { width: 26px; height: 26px; }
-
 .footer-note {
   font-size: 12px;
   line-height: 18px;
   color: var(--label-tertiary);
-}
-
-.footer-icp {
-  font-size: 11px;
-  line-height: 16px;
-  color: var(--label-quaternary);
 }
 
 /* ============ 回到顶部 ============ */
@@ -1221,21 +1216,28 @@ img { max-width: 100%; display: block; }
   .hero-desc { max-width: none; }
   .hero-float-card { left: 8px; }
   .stats-band { grid-template-columns: repeat(2, 1fr); }
-  .stat:nth-child(3) { border-left: none; padding-left: 0; }
   .stat { padding-top: 24px; padding-bottom: 24px; }
+  .stat:nth-child(odd) { border-left: none; padding-left: 0; }
   .module-grid, .docs-grid, .stack-grid { grid-template-columns: repeat(2, 1fr); }
   .role-grid { grid-template-columns: repeat(2, 1fr); }
   .dark-grid { grid-template-columns: 1fr; }
   .dark-card-wide { grid-template-columns: 1fr; }
+  .dark-card { padding: 24px; }
   .screenshot-caption { grid-template-columns: repeat(2, 1fr); }
   .flow-row { grid-template-columns: 1fr; gap: 12px; }
   .flow-arrow { justify-content: center; padding: 0; transform: rotate(90deg); }
   .ai-panel { grid-template-columns: 1fr; padding: 32px 24px; }
   .compare-row { grid-template-columns: 0.8fr 1.2fr 1.4fr; }
+  .compare-row > div { padding: 14px 16px; }
   .limits-list { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 640px) {
+  body { font-size: 15px; }
+
+  /* 顶栏与移动端菜单 */
+  .header-inner { padding: 0 16px; }
+  .brand { font-size: 15px; gap: 8px; }
   .header-nav {
     position: absolute;
     top: 64px; left: 0; right: 0;
@@ -1251,27 +1253,77 @@ img { max-width: 100%; display: block; }
 
   .header-nav.is-open { display: flex; }
 
-  .header-nav a { padding: 10px 12px; font-size: 16px; }
+  /* 触屏点击目标 ≥ 44px */
+  .header-nav a { padding: 12px; font-size: 16px; min-height: 44px; display: flex; align-items: center; }
 
   .nav-toggle { display: flex; }
 
   .header-cta { display: none; }
 
-  .hero { padding-top: 48px; }
-  .stats-band { grid-template-columns: 1fr 1fr; }
-  .module-grid, .docs-grid, .stack-grid, .role-grid { grid-template-columns: 1fr; }
-  .screenshot-caption { grid-template-columns: 1fr; }
-  .section { padding-top: 64px; }
+  /* Hero */
+  .hero { padding: 40px 16px 0; }
+  .hero-eyebrow { font-size: 10px; margin-bottom: 14px; }
+  .hero-title { font-size: clamp(32px, 9.5vw, 44px); margin-bottom: 18px; }
+  .hero-desc { font-size: 15px; line-height: 24px; margin-bottom: 24px; }
+  .hero-actions { flex-direction: column; align-items: stretch; }
+  .hero-actions .btn { width: 100%; }
+  .hero-note { margin-top: 18px; }
+  .hero-visual { flex-direction: column; align-items: stretch; }
+  .browser-frame { max-width: 100%; }
+  .chrome-url { font-size: 10px; padding: 3px 8px; }
+  .hero-float-card {
+    position: static;
+    margin-top: 12px;
+    align-self: flex-start;
+    animation: none;
+  }
+
+  /* 数据带 */
+  .stats-band { margin-top: 48px; grid-template-columns: 1fr 1fr; }
+  .stat { padding: 20px 16px 24px; }
+  .stat-num { font-size: clamp(26px, 7vw, 32px); }
+
+  /* 区块 */
+  .section { padding: 64px 16px 0; }
+  .section-head { margin-bottom: 32px; }
   .section-dark { margin-top: 64px; }
-  .section-dark-inner { padding: 64px 24px; }
-  .limits-panel { padding: 32px 24px; }
-  .cta-hero-inner { padding: 80px 24px; }
+  .section-dark-inner { padding: 64px 16px; }
+  .module-grid, .docs-grid, .stack-grid, .role-grid { grid-template-columns: 1fr; }
+  .dark-card { padding: 24px 20px; border-radius: var(--radius-lg); }
+  .engine-diagram { padding: 16px; }
+  .screenshot-caption { grid-template-columns: 1fr; }
+  .flow-step { padding: 16px; }
+  .ai-panel { padding: 24px 16px; border-radius: var(--radius-lg); }
+  .ai-msg { max-width: 100%; }
+  .ai-msg-bot { min-width: 0; }
+  .limits-panel { padding: 24px 16px; border-radius: var(--radius-lg); }
+  .cta-hero { margin-top: 64px; }
+  .cta-hero-inner { padding: 72px 20px; }
+  .cta-hero-actions { flex-direction: column; align-items: stretch; width: 100%; }
+  .cta-hero-actions .btn { width: 100%; }
+
+  /* 对比表：单列堆叠，单元格自带角色前缀 */
   .compare-row { grid-template-columns: 1fr; }
+  .compare-row > div { padding: 12px 16px; }
   .compare-row > div + div { border-left: none; border-top: 0.5px dashed var(--separator); }
   .compare-head { display: none; }
   .compare-row > div:first-child { font-weight: 600; background: var(--fill-f1); }
   .compare-row .dim::before { content: "外包 SaaS："; color: var(--label-quaternary); }
   .compare-row .col-x::before { content: "Project-X："; color: var(--brand-to); font-weight: 600; }
+
+  /* 页脚与悬浮按钮 */
+  .footer-inner { justify-content: center; text-align: center; }
+  .back-to-top {
+    right: 16px;
+    bottom: calc(16px + env(safe-area-inset-bottom, 0px));
+  }
+}
+
+/* 超小屏进一步收紧 */
+@media (max-width: 380px) {
+  .stats-band { grid-template-columns: 1fr; }
+  .stat { border-left: none; padding-left: 0; }
+  .mini-flow { gap: 6px; }
 }
 
 /* ============ 无障碍：减少动态 ============ */
