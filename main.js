@@ -48,7 +48,7 @@ function setupNavSpy() {
         if (!entry.isIntersecting) return;
         links.forEach((a) => {
           const active = a.getAttribute('href') === `#${entry.target.id}`;
-          a.style.color = active ? 'rgba(0,0,0,0.9)' : '';
+          a.classList.toggle('is-active', active);
           if (active) a.setAttribute('aria-current', 'true');
           else a.removeAttribute('aria-current');
         });
@@ -212,6 +212,43 @@ function setupTypewriter() {
   io.observe(target.closest('.ai-chat') || target);
 }
 
+// ---------- 深色模式切换 ----------
+function setupThemeToggle() {
+  const btn = document.getElementById('themeToggle');
+  const root = document.documentElement;
+  if (!btn) return;
+
+  function currentTheme() {
+    return root.dataset.theme === 'dark' ? 'dark' : 'light';
+  }
+
+  function syncButton() {
+    btn.setAttribute('aria-pressed', String(currentTheme() === 'dark'));
+  }
+
+  btn.addEventListener('click', () => {
+    const next = currentTheme() === 'dark' ? 'light' : 'dark';
+    root.dataset.theme = next;
+    try { localStorage.setItem('px-theme', next); } catch (e) { /* 隐私模式 */ }
+    syncButton();
+  });
+
+  // 用户未手动选择时，跟随系统主题变化
+  const mq = window.matchMedia('(prefers-color-scheme: dark)');
+  const onSystemChange = (e) => {
+    let saved = null;
+    try { saved = localStorage.getItem('px-theme'); } catch (err) { /* 忽略 */ }
+    if (!saved) {
+      root.dataset.theme = e.matches ? 'dark' : 'light';
+      syncButton();
+    }
+  };
+  if (mq.addEventListener) mq.addEventListener('change', onSystemChange);
+  else if (mq.addListener) mq.addListener(onSystemChange); // 旧版 Safari
+
+  syncButton();
+}
+
 // ---------- 初始化 ----------
 collectReveals();
 setupObserver();
@@ -220,3 +257,4 @@ setupScrollUI();
 setupMobileNav();
 setupCountUp();
 setupTypewriter();
+setupThemeToggle();

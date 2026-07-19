@@ -60,6 +60,76 @@
   --z-header: 500;
 }
 
+:root { color-scheme: light; }
+
+/* ============ 深色模式（data-theme="dark"） ============ */
+html[data-theme="dark"] {
+  color-scheme: dark;
+
+  --label-primary: rgba(255, 255, 255, 0.92);
+  --label-secondary: rgba(255, 255, 255, 0.62);
+  --label-tertiary: rgba(255, 255, 255, 0.42);
+  --label-quaternary: rgba(255, 255, 255, 0.28);
+
+  --bg-primary: #151923;
+  --bg-secondary: #0b0d12;
+  --bg-ground: #1b212e;
+
+  --fill-f1: rgba(255, 255, 255, 0.06);
+  --fill-f2: rgba(255, 255, 255, 0.1);
+  --fill-f3: rgba(255, 255, 255, 0.22);
+
+  --separator: rgba(255, 255, 255, 0.14);
+
+  --light-blue-bg: rgba(23, 131, 255, 0.14);
+}
+
+html[data-theme="dark"] .site-header {
+  background: rgba(11, 13, 18, 0.72);
+}
+
+html[data-theme="dark"] .site-header.is-scrolled {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+}
+
+/* 深色下主按钮为白底深字（token 自动反转），hover 微调 */
+html[data-theme="dark"] .btn-primary:hover { background: rgba(255, 255, 255, 0.82); }
+
+/* Logo 含深藏青元素，深色背景加浅色衬底保证可辨识 */
+html[data-theme="dark"] .logo-img:not(.cta-logo) {
+  background-color: rgba(255, 255, 255, 0.94);
+  border-radius: 8px;
+  padding: 3px;
+}
+
+/* 导航滚动高亮（JS 切换 is-active） */
+.header-nav a.is-active { color: var(--label-primary); }
+
+/* 主题切换按钮 */
+.theme-toggle {
+  width: 36px; height: 36px;
+  border: none;
+  background: var(--fill-f1);
+  border-radius: var(--radius-md);
+  color: var(--label-secondary);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 150ms ease, color 150ms ease;
+}
+
+.theme-toggle:hover { background: var(--fill-f2); color: var(--label-primary); }
+
+.theme-toggle:focus-visible {
+  outline: 2px solid var(--kimi-blue);
+  outline-offset: 2px;
+}
+
+.theme-toggle .icon-sun { display: none; }
+html[data-theme="dark"] .theme-toggle .icon-sun { display: block; }
+html[data-theme="dark"] .theme-toggle .icon-moon { display: none; }
+
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 html { scroll-behavior: smooth; scroll-padding-top: 80px; }
@@ -72,6 +142,7 @@ body {
   line-height: 24px;
   -webkit-font-smoothing: antialiased;
   -webkit-tap-highlight-color: transparent;
+  transition: background-color 300ms ease, color 300ms ease;
 }
 
 /* 防止移动端横向溢出（clip 不创建滚动容器，不影响 sticky 顶栏） */
