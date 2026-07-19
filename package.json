@@ -1,0 +1,15 @@
+{
+  "name": "project-x-promo",
+  "private": true,
+  "version": "1.0.0",
+  "description": "试卷星 Project-X 宣传页 · Kimi Design Style",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.4.11"
+  }
+}

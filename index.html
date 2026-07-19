@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>试卷星 Project-X · 五中自研智能阅卷与学情分析系统</title>
+  <meta name="description" content="试卷星 Project-X：大连市第五中学信息化部自研的一站式智能试卷管理系统。答题卡设计、高速扫描、自动阅卷、成绩分析与 AI 诊断，数据全程本地留存。" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+
+  <!-- ============ Header ============ -->
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <a class="brand" href="#top" aria-label="试卷星 Project-X 首页">
+        <span class="brand-badge" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round">
+            <path d="M12 2v20M2 12h20M4.9 4.9l14.2 14.2M19.1 4.9L4.9 19.1"/>
+          </svg>
+        </span>
+        <span class="brand-title">试卷星 <span class="brand-slash">/</span> Project-X</span>
+      </a>
+      <nav class="header-nav" role="navigation" aria-label="主导航">
+        <a href="#flow">全流程</a>
+        <a href="#features">核心能力</a>
+        <a href="#ai">AI 诊断</a>
+        <a href="#stack">技术架构</a>
+      </nav>
+      <div class="header-cta">
+        <a class="btn btn-primary btn-32" href="#cta">进入系统</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ============ Hero ============ -->
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="hero-copy reveal">
+          <h1 class="hero-title">
+            <span class="line-dark">从人工阅卷，</span>
+            <span class="line-accent">到智慧学情。</span>
+          </h1>
+          <p class="hero-desc">
+            试卷星 Project-X 是大连市第五中学信息化部自研的一站式试卷管理系统。
+            从<strong>答题卡设计</strong>、高速扫描、自动阅卷到<strong>成绩分析</strong>与
+            AI 弱项诊断——全流程自主可控，数据不出校园。
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary btn-44" href="#cta">
+              体验试卷星
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg>
+            </a>
+            <a class="btn btn-outline btn-44" href="#flow">
+              5 分钟了解全流程
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+            </a>
+          </div>
+          <p class="hero-note">服务已上线 · 当前版本 v1.9.0 · 由五中人，为五中人，服务五中教学</p>
+        </div>
+
+        <div class="hero-visual reveal" aria-hidden="true">
+          <div class="sheet-frame">
+            <div class="sheet-tag">ANSWER SHEET · AUTO GRADING</div>
+            <svg class="sheet-svg" viewBox="0 0 480 360" fill="none">
+              <!-- 答题卡边框 -->
+              <rect x="24" y="20" width="432" height="320" rx="6" stroke="rgba(0,0,0,0.25)" stroke-width="1"/>
+              <!-- 定位标记 -->
+              <rect x="34" y="30" width="14" height="14" fill="rgba(0,0,0,0.85)"/>
+              <rect x="432" y="30" width="14" height="14" fill="rgba(0,0,0,0.85)"/>
+              <rect x="34" y="316" width="14" height="14" fill="rgba(0,0,0,0.85)"/>
+              <rect x="432" y="316" width="14" height="14" fill="rgba(0,0,0,0.85)"/>
+              <!-- 学号区 -->
+              <text x="70" y="58" font-size="11" fill="rgba(0,0,0,0.45)" font-family="monospace">STUDENT ID</text>
+              <g stroke="rgba(0,0,0,0.2)">
+                <rect x="70" y="66" width="20" height="26"/><rect x="94" y="66" width="20" height="26"/>
+                <rect x="118" y="66" width="20" height="26"/><rect x="142" y="66" width="20" height="26"/>
+                <rect x="166" y="66" width="20" height="26"/><rect x="190" y="66" width="20" height="26"/>
+              </g>
+              <!-- 客观题填涂区 -->
+              <g font-family="monospace" font-size="9" fill="rgba(0,0,0,0.4)">
+                <text x="70" y="122">1</text><text x="70" y="146">2</text><text x="70" y="170">3</text>
+                <text x="70" y="194">4</text><text x="70" y="218">5</text><text x="70" y="242">6</text>
+                <text x="250" y="122">7</text><text x="250" y="146">8</text><text x="250" y="170">9</text>
+                <text x="250" y="194">10</text><text x="250" y="218">11</text><text x="250" y="242">12</text>
+              </g>
+              <g stroke="rgba(0,0,0,0.35)">
+                <!-- 每题 A B C D 四个圆 -->
+                <circle cx="92" cy="118" r="6"/><circle cx="112" cy="118" r="6"/><circle cx="132" cy="118" r="6"/><circle cx="152" cy="118" r="6"/>
+                <circle cx="92" cy="142" r="6"/><circle cx="112" cy="142" r="6"/><circle cx="132" cy="142" r="6"/><circle cx="152" cy="142" r="6"/>
+                <circle cx="92" cy="166" r="6"/><circle cx="112" cy="166" r="6"/><circle cx="132" cy="166" r="6"/><circle cx="152" cy="166" r="6"/>
+                <circle cx="92" cy="190" r="6"/><circle cx="112" cy="190" r="6"/><circle cx="132" cy="190" r="6"/><circle cx="152" cy="190" r="6"/>
+                <circle cx="92" cy="214" r="6"/><circle cx="112" cy="214" r="6"/><circle cx="132" cy="214" r="6"/><circle cx="152" cy="214" r="6"/>
+                <circle cx="92" cy="238" r="6"/><circle cx="112" cy="238" r="6"/><circle cx="132" cy="238" r="6"/><circle cx="152" cy="238" r="6"/>
+                <circle cx="272" cy="118" r="6"/><circle cx="292" cy="118" r="6"/><circle cx="312" cy="118" r="6"/><circle cx="332" cy="118" r="6"/>
+                <circle cx="272" cy="142" r="6"/><circle cx="292" cy="142" r="6"/><circle cx="312" cy="142" r="6"/><circle cx="332" cy="142" r="6"/>
+                <circle cx="272" cy="166" r="6"/><circle cx="292" cy="166" r="6"/><circle cx="312" cy="166" r="6"/><circle cx="332" cy="166" r="6"/>
+                <circle cx="272" cy="190" r="6"/><circle cx="292" cy="190" r="6"/><circle cx="312" cy="190" r="6"/><circle cx="332" cy="190" r="6"/>
+                <circle cx="272" cy="214" r="6"/><circle cx="292" cy="214" r="6"/><circle cx="312" cy="214" r="6"/><circle cx="332" cy="214" r="6"/>
+                <circle cx="272" cy="238" r="6"/><circle cx="292" cy="238" r="6"/><circle cx="312" cy="238" r="6"/><circle cx="332" cy="238" r="6"/>
+              </g>
+              <!-- 已填涂（识别结果，蓝色） -->
+              <g fill="#1783ff" class="marked">
+                <circle cx="112" cy="118" r="5.2"/>
+                <circle cx="152" cy="142" r="5.2"/>
+                <circle cx="92"  cy="166" r="5.2"/>
+                <circle cx="132" cy="190" r="5.2"/>
+                <circle cx="292" cy="118" r="5.2"/>
+                <circle cx="272" cy="166" r="5.2"/>
+                <circle cx="332" cy="214" r="5.2"/>
+              </g>
+              <!-- 主观题区 -->
+              <rect x="370" y="110" width="70" height="140" stroke="rgba(0,0,0,0.2)"/>
+              <g stroke="rgba(0,0,0,0.14)">
+                <line x1="378" y1="132" x2="432" y2="132"/><line x1="378" y1="152" x2="432" y2="152"/>
+                <line x1="378" y1="172" x2="432" y2="172"/><line x1="378" y1="192" x2="432" y2="192"/>
+                <line x1="378" y1="212" x2="432" y2="212"/><line x1="378" y1="232" x2="432" y2="232"/>
+              </g>
+              <!-- 红笔分数格 -->
+              <rect x="392" y="70" width="44" height="28" stroke="#ff3849" stroke-width="1.4"/>
+              <text x="405" y="89" font-size="14" fill="#ff3849" font-family="monospace">12</text>
+              <!-- 扫描线 -->
+              <line class="scanline" x1="24" y1="0" x2="456" y2="0" stroke="#1783ff" stroke-width="2" opacity="0.9"/>
+            </svg>
+            <div class="sheet-foot">
+              <span>OpenCV 识别引擎 · 置信度 99.2%</span>
+              <span class="sheet-foot-dim">01 / X</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 数据带 -->
+      <div class="stats-band reveal">
+        <div class="stat">
+          <div class="stat-num">v1.9.0</div>
+          <div class="stat-label">持续迭代版本</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">6 学科</div>
+          <div class="stat-label">答题卡模板一键生成</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">3 家</div>
+          <div class="stat-label">AI 服务商可切换</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">100%</div>
+          <div class="stat-label">数据本地留存</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 全流程 ============ -->
+    <section id="flow" class="section">
+      <div class="section-head reveal">
+        <h2 class="section-title">一套系统，走完阅卷全程</h2>
+        <p class="section-sub">从答题卡设计到学情报告，五个环节无缝衔接，无需任何第三方外包。</p>
+      </div>
+      <div class="flow-row reveal">
+        <div class="flow-step">
+          <div class="flow-index">01</div>
+          <div class="flow-name">设计答题卡</div>
+          <div class="flow-desc">6 学科模板，A4 毫米级排版，导出印刷级 PDF</div>
+        </div>
+        <div class="flow-arrow" aria-hidden="true">→</div>
+        <div class="flow-step">
+          <div class="flow-index">02</div>
+          <div class="flow-name">打印施考</div>
+          <div class="flow-desc">单双面、AB 卡式竖排，模板可复用可分享</div>
+        </div>
+        <div class="flow-arrow" aria-hidden="true">→</div>
+        <div class="flow-step">
+          <div class="flow-index">03</div>
+          <div class="flow-name">高速扫描</div>
+          <div class="flow-desc">扫描仪直扫或图片导入，双 C++ 原生引擎</div>
+        </div>
+        <div class="flow-arrow" aria-hidden="true">→</div>
+        <div class="flow-step">
+          <div class="flow-index">04</div>
+          <div class="flow-name">自动阅卷</div>
+          <div class="flow-desc">客观题秒判，主观题 2P/3P 多评加仲裁</div>
+        </div>
+        <div class="flow-arrow" aria-hidden="true">→</div>
+        <div class="flow-step">
+          <div class="flow-index">05</div>
+          <div class="flow-name">学情分析</div>
+          <div class="flow-desc">排名趋势、得分率、AI 弱项诊断一键生成</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 核心能力 ============ -->
+    <section id="features" class="section">
+      <div class="section-head reveal">
+        <h2 class="section-title">核心能力</h2>
+        <p class="section-sub">每一个环节都按学校真实场景打磨，而不是通用 SaaS 的妥协方案。</p>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-card reveal">
+          <div class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+          </div>
+          <h3 class="feature-name">答题卡设计器</h3>
+          <p class="feature-desc">对标专业制卡软件：单选、多选、不定项，填空、解答、横线格与插图，多选分档给分规则一应俱全。</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7V5a2 2 0 012-2h2M17 3h2a2 2 0 012 2v2M21 17v2a2 2 0 01-2 2h-2M7 21H5a2 2 0 01-2-2v-2M3 12h18"/></svg>
+          </div>
+          <h3 class="feature-name">自研识别引擎</h3>
+          <p class="feature-desc">C++ + OpenCV 视觉识别：填涂、学号、红笔分数格精准识别，低置信度自动标记待复核。</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+          </div>
+          <h3 class="feature-name">网上阅卷</h3>
+          <p class="feature-desc">大题自动切块分发，2P/3P 多评、争议仲裁、断点续批，PAD 优先的批阅界面。</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 15l4-6 4 3 5-8"/></svg>
+          </div>
+          <h3 class="feature-name">教研级成绩分析</h3>
+          <p class="feature-desc">校排班排、偏差值、Z 值、百分位，分数段分布与箱型图，新高考赋分引擎内置。</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a4 4 0 014 4c2.5.5 4 2.5 4 5a5 5 0 01-5 5H9a5 5 0 01-5-5c0-2.5 1.5-4.5 4-5a4 4 0 014-4z"/><path d="M12 16v6"/></svg>
+          </div>
+          <h3 class="feature-name">AI 学情诊断</h3>
+          <p class="feature-desc">多模态模型直接"看"原卷标注知识点，按得分率定位班级薄弱环节，自动生成分析报告。</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="14" height="12" rx="2"/><rect x="17" y="9" width="5" height="11" rx="1.5"/><path d="M2 20h14"/></svg>
+          </div>
+          <h3 class="feature-name">多端协同</h3>
+          <p class="feature-desc">教师学生走浏览器，扫描端是 Electron 桌面应用，学生另有微信小程序随时查分。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ AI 高亮 ============ -->
+    <section id="ai" class="section">
+      <div class="ai-panel reveal">
+        <div class="ai-copy">
+          <h2 class="section-title">让 AI 读懂每一张卷子</h2>
+          <p class="section-sub">
+            GPT、DeepSeek、Gemini 多服务商自由切换。AI 不只是写报告——
+            它直接阅读原卷图片，为每一道题标注知识点，再用得分率告诉你：
+            这个班到底弱在哪里。
+          </p>
+          <ul class="ai-list">
+            <li>知识点自动标注，多模态模型逐题分析</li>
+            <li>弱项诊断：如「勾股定理得分率 62%」一目了然</li>
+            <li>一键生成班级 / 年级成绩分析报告</li>
+            <li>导出前三步检查：分值验证 → 原卷预览 → 知识点分析</li>
+          </ul>
+        </div>
+        <div class="ai-demo" aria-hidden="true">
+          <div class="ai-chat">
+            <div class="ai-msg ai-msg-user">分析高二(3)班本次数学考试的薄弱知识点</div>
+            <div class="ai-msg ai-msg-bot">
+              <span class="ai-dot"></span><span class="ai-dot"></span><span class="ai-dot"></span>
+              班级薄弱点 Top 3：立体几何 58% · 导数应用 61% · 概率分布 64%…
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 技术架构 ============ -->
+    <section id="stack" class="section">
+      <div class="section-head reveal">
+        <h2 class="section-title">自主可控的技术底座</h2>
+        <p class="section-sub">全栈自研，开源 GPL-3.0。数据留在校内服务器，彻底告别外包 SaaS。</p>
+      </div>
+      <div class="stack-grid">
+        <div class="stack-card reveal">
+          <h3 class="stack-name">双原生引擎</h3>
+          <p class="stack-desc">OpenCV 视觉识别引擎 + TWAIN 扫描仪桥，C++ 实现，性能与精度完全可控，兼容 32 位老旧机房电脑。</p>
+        </div>
+        <div class="stack-card reveal">
+          <h3 class="stack-name">双数据库模式</h3>
+          <p class="stack-desc">本地 SQLite 零依赖离线可用，或远程 MariaDB 生产部署，附一键建库与迁移脚本。</p>
+        </div>
+        <div class="stack-card reveal">
+          <h3 class="stack-name">权限与安全</h3>
+          <p class="stack-desc">RBAC 三级权限自动隔离数据可见范围，bcrypt 密码哈希，33 项权限自动化测试用例护航。</p>
+        </div>
+      </div>
+      <div class="stack-tags reveal">
+        <span class="tag">React 19</span>
+        <span class="tag">TypeScript</span>
+        <span class="tag">Express 5</span>
+        <span class="tag">Electron 39</span>
+        <span class="tag">OpenCV</span>
+        <span class="tag">SQLite / MariaDB</span>
+        <span class="tag">微信小程序</span>
+        <span class="tag">GPL-3.0</span>
+      </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section id="cta" class="section cta-section">
+      <div class="cta-panel reveal">
+        <h2 class="cta-title">准备好告别外包阅卷了吗？</h2>
+        <p class="cta-sub">零外包成本 · 模板随意改 · 数据自己管。现在就把阅卷掌握在自己手里。</p>
+        <div class="hero-actions cta-actions">
+          <a class="btn btn-primary btn-44" href="#top">
+            进入试卷星
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg>
+          </a>
+          <a class="btn btn-outline btn-44" href="#stack">查看技术架构</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ Footer ============ -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="brand-badge" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round">
+            <path d="M12 2v20M2 12h20M4.9 4.9l14.2 14.2M19.1 4.9L4.9 19.1"/>
+          </svg>
+        </span>
+        <span>试卷星 Project-X</span>
+      </div>
+      <p class="footer-note">大连市第五中学信息化部 自研 · 由五中人，为五中人，服务五中教学 · GPL-3.0 开源</p>
+    </div>
+  </footer>
+
+  <script type="module" src="/main.js"></script>
+</body>
+</html>
