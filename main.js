@@ -38,8 +38,11 @@ function setupObserver() {
 // ---------- 导航激活态：滚动位置高亮当前 section ----------
 function setupNavSpy() {
   const links = Array.from(document.querySelectorAll('.header-nav a'));
+  // 仅处理站内锚点（#…）；外部链接（如 ./sponsor.html）不是合法选择器，必须过滤
   const sections = links
-    .map((a) => document.querySelector(a.getAttribute('href')))
+    .map((a) => a.getAttribute('href'))
+    .filter((href) => href && href.startsWith('#'))
+    .map((href) => document.querySelector(href))
     .filter(Boolean);
 
   const spy = new IntersectionObserver(
@@ -250,11 +253,21 @@ function setupThemeToggle() {
 }
 
 // ---------- 初始化 ----------
-collectReveals();
-setupObserver();
-setupNavSpy();
-setupScrollUI();
-setupMobileNav();
-setupCountUp();
-setupTypewriter();
-setupThemeToggle();
+// 单个 setup 抛错不应连累其余功能：逐个捕获并上报
+const setups = [
+  collectReveals,
+  setupObserver,
+  setupNavSpy,
+  setupScrollUI,
+  setupMobileNav,
+  setupCountUp,
+  setupTypewriter,
+  setupThemeToggle,
+];
+for (const fn of setups) {
+  try {
+    fn();
+  } catch (err) {
+    console.error(`[px-promo] ${fn.name} 初始化失败：`, err);
+  }
+}
