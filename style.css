@@ -1,10 +1,10 @@
 /* ============================================================
-   试卷星 Project-X 宣传页 · Kimi Design Style (K3 editorial)
-   Token source: kimi-design-skill references/tokens.json
+   试卷星 Project-X 官方宣传页 · 纸锋 Paper Edge
+   对齐 Project-X v2.3.0 design/tokens.css [data-skin="paper-edge"]
    ============================================================ */
 
 /* 内联 Logo（data URI，免外部请求，移动端必加载） */
-@import "./assets/logo-datauri.css?v=20260720a";
+@import "./assets/logo-datauri.css?v=20260811c";
 
 :root {
   /* color.labels */
@@ -1413,3 +1413,170 @@ img { max-width: 100%; display: block; }
   .flow-step:hover, .module-card:hover, .role-card:hover,
   .doc-card:hover, .caption-item:hover, .browser-frame:hover { transform: none; }
 }
+
+/* ============================================================
+   纸锋 Paper Edge 皮肤覆盖（v2.3.0 默认皮肤）
+   与 Project-X design/tokens.css 同源：纸面米底 #F1EFE9、
+   墨色文字阶、亮蓝 #2E44FF、直角卡片 + 胶囊按钮、边框优先、
+   无弥散投影/玻璃拟态/渐变，硬偏移阴影仅落在 hero 实机框。
+   ============================================================ */
+html[data-skin="paper-edge"] {
+  --label-primary: #1A1917;
+  --label-secondary: #4A4842;
+  --label-tertiary: #6F6D66;
+  --label-quaternary: #8B887E;
+
+  --bg-primary: #F1EFE9;
+  --bg-secondary: #E9E6DE;
+  --bg-ground: #E9E6DE;
+
+  --fill-f1: rgba(26, 25, 23, 0.05);
+  --fill-f2: rgba(26, 25, 23, 0.08);
+  --fill-f3: rgba(26, 25, 23, 0.18);
+  --separator: #D8D5CB;
+
+  --kimi-blue: #2E44FF;
+  --kimi-blue-hover: #1F30C8;
+  --danger: #C00F28;
+  --light-blue-bg: rgba(46, 68, 255, 0.09);
+  --brand-from: #2E44FF;
+  --brand-to: #2E44FF;
+
+  --radius-sm: 0;
+  --radius-md: 0;
+  --radius-lg: 0;
+  --radius-xl: 0;
+
+  --dark-bg: #141413;
+  --dark-card: #1D1D1B;
+  --dark-card-hover: #2E2E2B;
+  --dark-label: rgba(241, 239, 233, 0.94);
+  --dark-label-2: rgba(241, 239, 233, 0.68);
+  --dark-label-3: rgba(241, 239, 233, 0.46);
+  --dark-separator: rgba(241, 239, 233, 0.16);
+}
+
+html[data-skin="paper-edge"] ::selection { background: rgba(46, 68, 255, 0.18); }
+
+html[data-skin="paper-edge"] .site-header {
+  background: var(--bg-primary);
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+
+html[data-skin="paper-edge"] .site-header.is-scrolled { box-shadow: none; }
+
+html[data-skin="paper-edge"] .scroll-progress span { background: var(--brand-from); }
+
+html[data-skin="paper-edge"] .btn-44,
+html[data-skin="paper-edge"] .btn-32 { border-radius: var(--radius-full); }
+
+html[data-skin="paper-edge"] .btn-primary:hover { background: var(--kimi-blue); }
+
+html[data-skin="paper-edge"] .btn-outline { box-shadow: inset 0 0 0 1px var(--label-primary); }
+
+html[data-skin="paper-edge"] .btn-outline:hover {
+  background: var(--label-primary);
+  color: var(--bg-primary);
+}
+
+html[data-skin="paper-edge"] .btn-light { background: #F1EFE9; color: #1F30C8; }
+html[data-skin="paper-edge"] .btn-light:hover { background: #FFFFFF; }
+
+/* 注意：background 简写会重置 background-clip，必须补回 clip:text 声明，
+   否则渐变标题退化为整块纯色、文字透明不可见 */
+html[data-skin="paper-edge"] .hero-title .line-accent {
+  background: var(--brand-from);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+html[data-skin="paper-edge"] .hero-title,
+html[data-skin="paper-edge"] .section-title,
+html[data-skin="paper-edge"] .stat-num { font-weight: 800; }
+
+html[data-skin="paper-edge"] .browser-frame {
+  border: 1px solid var(--label-primary);
+  box-shadow: 8px 8px 0 var(--label-primary);
+}
+
+html[data-skin="paper-edge"] .browser-frame:hover {
+  transform: none;
+  box-shadow: 8px 8px 0 var(--label-primary);
+}
+
+html[data-skin="paper-edge"] .hero-float-card {
+  border: 1px solid var(--separator);
+  box-shadow: none;
+  animation: none;
+}
+
+html[data-skin="paper-edge"] .module-card,
+html[data-skin="paper-edge"] .flow-step,
+html[data-skin="paper-edge"] .role-card,
+html[data-skin="paper-edge"] .stack-card,
+html[data-skin="paper-edge"] .caption-item {
+  border: 1px solid var(--separator);
+  transform: none;
+}
+
+html[data-skin="paper-edge"] .module-card:hover,
+html[data-skin="paper-edge"] .flow-step:hover,
+html[data-skin="paper-edge"] .role-card:hover,
+html[data-skin="paper-edge"] .caption-item:hover { transform: none; }
+
+html[data-skin="paper-edge"] .doc-card:hover { transform: none; }
+
+html[data-skin="paper-edge"] .engine-bar i::after { background: var(--brand-from); }
+
+html[data-skin="paper-edge"] .ai-panel { border: 1px solid var(--separator); }
+
+html[data-skin="paper-edge"] .ai-chat {
+  border: 1px solid var(--separator);
+  box-shadow: none;
+}
+
+html[data-skin="paper-edge"] .ai-msg { border-radius: 0; }
+
+html[data-skin="paper-edge"] .compare-table { border: 1px solid var(--separator); }
+
+html[data-skin="paper-edge"] .compare-row .col-x { background: rgba(46, 68, 255, 0.06); }
+html[data-skin="paper-edge"] .compare-head .col-x { background: rgba(46, 68, 255, 0.12); }
+
+html[data-skin="paper-edge"] .cta-hero { background: var(--brand-from); }
+
+html[data-skin="paper-edge"] .cta-logo { filter: none; }
+
+html[data-skin="paper-edge"] .back-to-top {
+  border-radius: 0;
+  box-shadow: none;
+}
+
+/* 纸锋暗色：软件令牌暗色组合 #141413/#1D1D1B/#2E2E2B，accent 提亮保对比度 */
+html[data-skin="paper-edge"][data-theme="dark"] {
+  color-scheme: dark;
+
+  --label-primary: rgba(241, 239, 233, 0.94);
+  --label-secondary: rgba(241, 239, 233, 0.7);
+  --label-tertiary: rgba(241, 239, 233, 0.5);
+  --label-quaternary: rgba(241, 239, 233, 0.34);
+
+  --bg-primary: #141413;
+  --bg-secondary: #141413;
+  --bg-ground: #1D1D1B;
+
+  --fill-f1: rgba(241, 239, 233, 0.07);
+  --fill-f2: rgba(241, 239, 233, 0.12);
+  --fill-f3: rgba(241, 239, 233, 0.24);
+  --separator: rgba(241, 239, 233, 0.18);
+
+  --kimi-blue: #4A5CFF;
+  --kimi-blue-hover: #6B78FF;
+  --light-blue-bg: rgba(74, 92, 255, 0.16);
+  --brand-from: #4A5CFF;
+  --brand-to: #4A5CFF;
+}
+
+html[data-skin="paper-edge"][data-theme="dark"] .site-header { background: var(--bg-primary); }
+
+html[data-skin="paper-edge"][data-theme="dark"] .btn-primary:hover { background: var(--kimi-blue); }
