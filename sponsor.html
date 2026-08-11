@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-skin="paper-edge">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>赞助我们 · 试卷星 Project-X</title>
+  <meta name="description" content="赞助试卷星 Project-X：大连市第五中学信息化部自研的开源智能试卷管理系统。全栈自研、GPL-3.0 开源、零外包费用，欢迎在爱发电上支持我们继续开发。" />
+  <meta property="og:title" content="赞助 Project-X · 让自研阅卷系统走得更远" />
+  <meta property="og:description" content="试卷星 Project-X：五中信息化部全栈自研的开源阅卷系统，爱发电赞助支持服务器、扫描设备与周边制作。" />
+  <meta property="og:image" content="./assets/logo.png" />
+  <meta name="theme-color" content="#F1EFE9" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#141413" media="(prefers-color-scheme: dark)" />
+  <link rel="icon" type="image/png" href="./assets/favicon.png" />
+  <script>
+    // 主题初始化：优先用户选择，否则跟随系统；在样式表前执行避免闪烁
+    (function () {
+      try {
+        var t = localStorage.getItem('px-theme');
+        if (!t) t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        document.documentElement.dataset.theme = t;
+      } catch (e) { /* 忽略隐私模式异常，保持浅色 */ }
+    })();
+  </script>
+  <link rel="stylesheet" href="./style.css?v=20260811d" />
+</head>
+<body>
+
+  <!-- ============ Header ============ -->
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <a class="brand" href="./index.html" aria-label="试卷星 Project-X 首页">
+        <span class="logo-img logo-img--30" role="img" aria-label="Project-X 标志"></span>
+        <span class="brand-title">试卷星 <span class="brand-slash">/</span> Project-X</span>
+      </a>
+      <nav class="header-nav" role="navigation" aria-label="主导航">
+        <a href="./index.html#modules">模块</a>
+        <a href="./index.html#flow">全流程</a>
+        <a href="./index.html#ai">AI 诊断</a>
+        <a href="./index.html#compare">对比</a>
+      </nav>
+      <div class="header-right">
+        <button class="theme-toggle" id="themeToggle" aria-label="切换深色 / 浅色模式" aria-pressed="false" title="切换深色 / 浅色模式">
+          <svg class="icon-moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+        </button>
+        <a class="btn btn-primary btn-32 header-cta" href="https://dl5zx.cn/" target="_blank" rel="noopener">进入系统</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============ 赞助 Hero ============ -->
+    <section class="sponsor-hero">
+      <p class="section-eyebrow">爱发电 · 赞助开发</p>
+      <h1 class="sponsor-title">让 Project-X<br />走得更远。</h1>
+      <p class="sponsor-sub">
+        试卷星 Project-X 是五中信息化部全栈自研的开源系统：<strong>GPL-3.0 开源、零外包费用、成绩数据留在校内</strong>。
+        如果你认可这个项目，欢迎在爱发电上支持我们——每一份赞助都会直接变成下一行的代码、下一张测试的答题卡。
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary btn-44" href="https://ifdian.net/a/ProjectX" target="_blank" rel="noopener">
+          前往爱发电主页
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg>
+        </a>
+        <a class="btn btn-outline btn-44" href="https://github.com/Dalian-No-5-Middle-School-I-T-C/Project-X" target="_blank" rel="noopener">查看开源源码</a>
+      </div>
+    </section>
+
+    <!-- ============ 海报 + 用途 ============ -->
+    <section class="sponsor-main">
+      <figure class="sponsor-poster">
+        <img src="./assets/afdian-x-diary.jpg" alt="爱发电赞助海报：X酱的开发日记" loading="eager" />
+      </figure>
+
+      <div class="sponsor-copy">
+        <p class="section-eyebrow">为什么赞助</p>
+        <h2 class="section-title">自研系统的每一分钱，都花在刀刃上。</h2>
+        <p class="section-sub">外包阅卷按次收费、逐年涨价；Project-X 立项时就是要摆脱这个循环。它不卖授权、不做商业化，赞助只用来覆盖真实的开发成本。</p>
+
+        <div class="sponsor-list">
+          <div class="sponsor-item">
+            <div class="sponsor-item-head">
+              <span class="caption-index">01</span>
+              <strong>服务器与带宽</strong>
+            </div>
+            <p>校内服务器托管、域名与带宽费用——让系统 7×24 稳定在线，考试季不宕机。</p>
+          </div>
+          <div class="sponsor-item">
+            <div class="sponsor-item-head">
+              <span class="caption-index">02</span>
+              <strong>扫描与测试设备</strong>
+            </div>
+            <p>老旧机房兼容测试、多型号扫描仪实测（TWAIN 链路）、识别引擎真机调参——硬件是测试成本的大头。</p>
+          </div>
+          <div class="sponsor-item">
+            <div class="sponsor-item-head">
+              <span class="caption-index">03</span>
+              <strong>周边与物料</strong>
+            </div>
+            <p>爱发电回报包含周边图包、表情包与看板娘物料，由赞助反哺制作，让项目氛围更鲜活。</p>
+          </div>
+        </div>
+
+        <p class="sponsor-note">透明说明：赞助完全自愿。不赞助也可以免费使用全部功能；项目源码在 GitHub 全量公开，欢迎审阅与二次开发。</p>
+
+        <a class="btn btn-primary btn-44 sponsor-cta" href="https://ifdian.net/a/ProjectX" target="_blank" rel="noopener">
+          支持 Project-X
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- ============ 开发日记引语 ============ -->
+    <section class="sponsor-quote">
+      <div class="sponsor-quote-inner">
+        <span class="logo-img logo-img--30" role="img" aria-label="Project-X 标志"></span>
+        <p class="sponsor-quote-text">“从第一张答题卡，到全校的网上阅卷——每一份支持，都让这套系统离更多人更近一步。”</p>
+        <p class="sponsor-quote-attr">—— 大连市第五中学信息化部</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ Footer ============ -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="logo-img logo-img--26" role="img" aria-label="Project-X 标志"></span>
+        <span>试卷星 Project-X</span>
+      </div>
+      <p class="footer-note">大连市第五中学信息化部 自研 · 由五中人，为五中人，服务五中教学 · GPL-3.0 开源 · <a class="footer-link" href="https://ifdian.net/a/ProjectX" target="_blank" rel="noopener">爱发电赞助</a></p>
+    </div>
+  </footer>
+
+  <script>
+    // 主题切换（与首页共用 localStorage 键）
+    (function () {
+      var toggle = document.getElementById('themeToggle');
+      if (!toggle) return;
+      var apply = function (t) {
+        document.documentElement.dataset.theme = t;
+        toggle.setAttribute('aria-pressed', t === 'dark');
+      };
+      apply(document.documentElement.dataset.theme || 'light');
+      toggle.addEventListener('click', function () {
+        var next = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
+        try { localStorage.setItem('px-theme', next); } catch (e) {}
+        apply(next);
+      });
+    })();
+  </script>
+</body>
+</html>

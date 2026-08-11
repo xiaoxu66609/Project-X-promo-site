@@ -4,7 +4,7 @@
    ============================================================ */
 
 /* 内联 Logo（data URI，免外部请求，移动端必加载） */
-@import "./assets/logo-datauri.css?v=20260811c";
+@import "./assets/logo-datauri.css?v=20260811d";
 
 :root {
   /* color.labels */
@@ -1580,3 +1580,143 @@ html[data-skin="paper-edge"][data-theme="dark"] {
 html[data-skin="paper-edge"][data-theme="dark"] .site-header { background: var(--bg-primary); }
 
 html[data-skin="paper-edge"][data-theme="dark"] .btn-primary:hover { background: var(--kimi-blue); }
+
+/* ============================================================
+   赞助页 sponsor.html 专属样式（命名空间 .sponsor-*，不影响首页）
+   ============================================================ */
+.sponsor-hero {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 112px 24px 24px;
+  text-align: center;
+}
+
+.sponsor-title {
+  margin: 12px 0 20px;
+  font-size: clamp(34px, 5vw, 52px);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  font-weight: 800;
+  color: var(--label-primary);
+}
+
+.sponsor-sub {
+  max-width: 620px;
+  margin: 0 auto 32px;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--label-secondary);
+}
+
+.sponsor-main {
+  max-width: 1080px;
+  margin: 56px auto 0;
+  padding: 0 24px;
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  gap: 56px;
+  align-items: start;
+}
+
+.sponsor-poster {
+  margin: 0;
+  border: 1px solid var(--label-primary);
+  box-shadow: 8px 8px 0 var(--label-primary);
+  background: var(--bg-primary);
+  animation: sponsor-rise 600ms var(--ease-out) both;
+}
+
+.sponsor-poster img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@keyframes sponsor-rise {
+  from { opacity: 0; transform: translateY(16px) scale(0.98); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.sponsor-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.sponsor-list {
+  width: 100%;
+  display: grid;
+  gap: 14px;
+  margin: 28px 0 20px;
+}
+
+.sponsor-item {
+  padding: 18px 20px;
+  background: var(--bg-primary);
+  border: 1px solid var(--separator);
+}
+
+.sponsor-item-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 6px;
+  font-size: 15px;
+  color: var(--label-primary);
+}
+
+.sponsor-item p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+  color: var(--label-secondary);
+}
+
+.sponsor-note {
+  margin: 4px 0 24px;
+  font-size: 13px;
+  line-height: 20px;
+  color: var(--label-tertiary);
+}
+
+.sponsor-quote {
+  margin-top: 96px;
+  padding: 72px 24px;
+  background: var(--bg-primary);
+  border-top: 1px solid var(--separator);
+  border-bottom: 1px solid var(--separator);
+}
+
+.sponsor-quote-inner {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
+.sponsor-quote-text {
+  margin: 0;
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 600;
+  color: var(--label-primary);
+}
+
+.sponsor-quote-attr {
+  margin: 0;
+  font-size: 13px;
+  color: var(--label-tertiary);
+}
+
+.footer-link { text-decoration: underline; }
+.footer-link:hover { color: var(--label-primary); }
+
+@media (max-width: 960px) {
+  .sponsor-main { grid-template-columns: 1fr; gap: 32px; }
+  .sponsor-poster { max-width: 340px; margin: 0 auto; }
+  .sponsor-copy { align-items: stretch; text-align: left; }
+  .sponsor-hero { padding-top: 80px; }
+}
