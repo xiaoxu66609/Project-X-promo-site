@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://xiaoxu66609.github.io/Project-X-promo-site/sitemap.xml

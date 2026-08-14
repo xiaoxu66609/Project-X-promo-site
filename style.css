@@ -4,7 +4,7 @@
    ============================================================ */
 
 /* 内联 Logo（data URI，免外部请求，移动端必加载） */
-@import "./assets/logo-datauri.css?v=20260811d";
+@import "./assets/logo-datauri.css?v=20260814a";
 
 :root {
   /* color.labels */
@@ -809,6 +809,85 @@ img { max-width: 100%; display: block; }
   padding-top: 2px;
 }
 
+/* ============ 实机界面：辅助图集（侧栏工作台 + 双皮肤对比） ============ */
+.screenshot-gallery {
+  display: grid;
+  grid-template-columns: minmax(0, 260px) minmax(0, 1fr);
+  gap: 24px;
+  max-width: 960px;
+  margin: 0 auto;
+  width: 100%;
+  align-items: start;
+}
+
+.gallery-item {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-width: 0;
+}
+
+.gallery-item .browser-frame { margin: 0; }
+
+/* 侧栏截图源图仅 280x720 竖图：渲染宽度不得超过 280px，否则放大模糊；
+   限高裁顶，展示顶部门户区域，避免区块被拉长 */
+.browser-frame-sm {
+  max-width: 260px;
+  margin: 0 auto;
+}
+
+.browser-frame-sm img {
+  width: 100%;
+  max-height: 480px;
+  object-fit: cover;
+  object-position: top;
+}
+
+/* 双皮肤对比：两张宽幅预览纵向叠放，标签在下 */
+.skin-compare {
+  display: grid;
+  gap: 16px;
+}
+
+.skin-pane {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+}
+
+.skin-pane img {
+  width: 100%;
+  height: auto;
+  background: var(--bg-primary);
+  border: 0.5px solid var(--separator);
+  transition: transform 150ms var(--ease-out), box-shadow 150ms ease;
+}
+
+.skin-pane img:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.skin-label {
+  font-family: "Geist Mono", ui-monospace, monospace;
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  color: var(--label-tertiary);
+  text-align: center;
+}
+
+/* 暗色模式：辅助图边框随令牌变深，去掉高亮色感 */
+html[data-theme="dark"] .skin-pane img {
+  border-color: var(--separator);
+  background: var(--bg-ground);
+}
+
+html[data-theme="dark"] .skin-pane img:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+}
+
 /* ============ 全流程 ============ */
 .flow-row {
   display: grid;
@@ -1098,10 +1177,15 @@ img { max-width: 100%; display: block; }
   padding: 24px;
   display: flex;
   flex-direction: column;
-  transition: background-color 150ms ease, transform 150ms var(--ease-out);
+  transition: background-color 150ms ease, transform 150ms var(--ease-out), border-color 150ms ease, box-shadow 150ms ease;
 }
 
 .doc-card:hover { background: var(--dark-card-hover); transform: translateY(-2px); }
+
+.doc-card:focus-visible {
+  outline: 2px solid var(--brand-to);
+  outline-offset: 2px;
+}
 
 .doc-card h3 {
   font-size: 16px;
@@ -1109,6 +1193,23 @@ img { max-width: 100%; display: block; }
   line-height: 24px;
   margin-bottom: 8px;
   color: var(--dark-label);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* 外链箭头：默认淡显，hover 时抬亮微移 */
+.doc-link-icon {
+  flex: none;
+  color: var(--brand-to);
+  opacity: 0.55;
+  transition: opacity 150ms ease, transform 150ms var(--ease-out);
+}
+
+.doc-card:hover .doc-link-icon,
+.doc-card:focus-visible .doc-link-icon {
+  opacity: 1;
+  transform: translate(1px, -1px);
 }
 
 .doc-card p {
@@ -1319,6 +1420,9 @@ img { max-width: 100%; display: block; }
   .dark-card-wide { grid-template-columns: 1fr; }
   .dark-card { padding: 24px; }
   .screenshot-caption { grid-template-columns: repeat(2, 1fr); }
+  /* 辅助图集：平板 / 手机收窄为单列，侧栏图居中且不超过源图宽度 */
+  .screenshot-gallery { grid-template-columns: 1fr; }
+  .browser-frame-sm { max-width: 280px; margin: 0 auto; }
   .flow-row { grid-template-columns: 1fr; gap: 12px; }
   .flow-arrow { justify-content: center; padding: 0; transform: rotate(90deg); }
   .ai-panel { grid-template-columns: 1fr; padding: 32px 24px; }
@@ -1362,6 +1466,9 @@ img { max-width: 100%; display: block; }
   .dark-card { padding: 24px 20px; border-radius: var(--radius-lg); }
   .engine-diagram { padding: 16px; }
   .screenshot-caption { grid-template-columns: 1fr; }
+  .screenshot-gallery { gap: 20px; }
+  .browser-frame-sm { max-width: 280px; }
+  .browser-frame-sm img { max-height: 360px; }
   .flow-step { padding: 16px; }
   .ai-panel { padding: 24px 16px; border-radius: var(--radius-lg); }
   .ai-msg { max-width: 100%; }
@@ -1524,7 +1631,21 @@ html[data-skin="paper-edge"] .flow-step:hover,
 html[data-skin="paper-edge"] .role-card:hover,
 html[data-skin="paper-edge"] .caption-item:hover { transform: none; }
 
-html[data-skin="paper-edge"] .doc-card:hover { transform: none; }
+/* 纸锋悬停：墨边 + 硬偏移阴影（皮肤规范：无弥散投影，仅硬投影） */
+html[data-skin="paper-edge"] .doc-card:hover {
+  transform: none;
+  border-color: var(--dark-label);
+  box-shadow: 4px 4px 0 var(--dark-label);
+}
+
+html[data-skin="paper-edge"] .doc-card:focus-visible { box-shadow: none; }
+
+html[data-skin="paper-edge"] .skin-pane img { border: 1px solid var(--separator); }
+
+html[data-skin="paper-edge"] .skin-pane img:hover {
+  transform: none;
+  box-shadow: 4px 4px 0 var(--label-primary);
+}
 
 html[data-skin="paper-edge"] .engine-bar i::after { background: var(--brand-from); }
 

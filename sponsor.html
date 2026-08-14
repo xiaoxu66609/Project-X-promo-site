@@ -5,9 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>赞助我们 · 试卷星 Project-X</title>
   <meta name="description" content="赞助试卷星 Project-X：大连市第五中学信息化部自研的开源智能试卷管理系统。全栈自研、GPL-3.0 开源、零外包费用，欢迎在爱发电上支持我们继续开发。" />
+  <meta name="keywords" content="试卷星, Project-X, 赞助, 爱发电, 开源赞助, 智能阅卷, 大连市第五中学" />
+  <link rel="canonical" href="https://xiaoxu66609.github.io/Project-X-promo-site/sponsor.html" />
+  <meta property="og:type" content="website" />
   <meta property="og:title" content="赞助 Project-X · 让自研阅卷系统走得更远" />
   <meta property="og:description" content="试卷星 Project-X：五中信息化部全栈自研的开源阅卷系统，爱发电赞助支持服务器、扫描设备与周边制作。" />
-  <meta property="og:image" content="./assets/logo.png" />
+  <meta property="og:url" content="https://xiaoxu66609.github.io/Project-X-promo-site/sponsor.html" />
+  <meta property="og:image" content="https://xiaoxu66609.github.io/Project-X-promo-site/assets/logo.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="赞助 Project-X · 让自研阅卷系统走得更远" />
+  <meta name="twitter:description" content="试卷星 Project-X：五中信息化部全栈自研的开源阅卷系统，爱发电赞助支持服务器、扫描设备与周边制作。" />
+  <meta name="twitter:image" content="https://xiaoxu66609.github.io/Project-X-promo-site/assets/logo.png" />
   <meta name="theme-color" content="#F1EFE9" media="(prefers-color-scheme: light)" />
   <meta name="theme-color" content="#141413" media="(prefers-color-scheme: dark)" />
   <link rel="icon" type="image/png" href="./assets/favicon.png" />
@@ -21,7 +29,7 @@
       } catch (e) { /* 忽略隐私模式异常，保持浅色 */ }
     })();
   </script>
-  <link rel="stylesheet" href="./style.css?v=20260811f" />
+  <link rel="stylesheet" href="./style.css?v=20260814a" />
 </head>
 <body>
 
@@ -174,6 +182,15 @@
         try { localStorage.setItem('px-theme', next); } catch (e) {}
         apply(next);
       });
+      // 用户未手动选择时，跟随系统主题变化（与首页 main.js 行为一致）
+      var mq = window.matchMedia('(prefers-color-scheme: dark)');
+      var onSystemChange = function (e) {
+        var saved = null;
+        try { saved = localStorage.getItem('px-theme'); } catch (err) {}
+        if (!saved) apply(e.matches ? 'dark' : 'light');
+      };
+      if (mq.addEventListener) mq.addEventListener('change', onSystemChange);
+      else if (mq.addListener) mq.addListener(onSystemChange); // 旧版 Safari
     })();
   </script>
 </body>

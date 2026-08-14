@@ -5,11 +5,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>试卷星 Project-X · 五中自研智能阅卷与学情分析系统</title>
   <meta name="description" content="试卷星 Project-X：大连市第五中学信息化部自研的一站式智能试卷管理系统。答题卡设计、扫描识别、网上阅卷、成绩分析与 AI 诊断，Web 端与 Windows 扫描端协同工作。" />
+  <meta name="keywords" content="试卷星, Project-X, 智能阅卷, 网上阅卷, 答题卡设计, 成绩分析, AI 诊断, 大连市第五中学, 开源, 教育信息化" />
+  <link rel="canonical" href="https://xiaoxu66609.github.io/Project-X-promo-site/" />
+  <meta property="og:type" content="website" />
   <meta property="og:title" content="试卷星 Project-X · 从人工阅卷，到智慧学情" />
   <meta property="og:description" content="五中自研一站式智能阅卷与学情分析系统：答题卡设计、扫描识别、网上阅卷、成绩分析、AI 弱项诊断，Web 与 Windows 扫描端协同工作。" />
-  <meta property="og:image" content="./assets/logo.png" />
+  <meta property="og:url" content="https://xiaoxu66609.github.io/Project-X-promo-site/" />
+  <meta property="og:image" content="https://xiaoxu66609.github.io/Project-X-promo-site/assets/logo.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="试卷星 Project-X · 从人工阅卷，到智慧学情" />
+  <meta name="twitter:description" content="五中自研一站式智能阅卷与学情分析系统：答题卡设计、扫描识别、网上阅卷、成绩分析、AI 弱项诊断，Web 与 Windows 扫描端协同工作。" />
+  <meta name="twitter:image" content="https://xiaoxu66609.github.io/Project-X-promo-site/assets/logo.png" />
   <meta name="theme-color" content="#F1EFE9" media="(prefers-color-scheme: light)" />
   <meta name="theme-color" content="#141413" media="(prefers-color-scheme: dark)" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "试卷星 Project-X",
+    "applicationCategory": "EducationalApplication",
+    "operatingSystem": "Web, Windows",
+    "description": "大连市第五中学信息化部自研的一站式智能试卷管理系统：答题卡设计、高速扫描、网上阅卷、成绩分析与 AI 诊断，GPL-3.0 开源。",
+    "url": "https://xiaoxu66609.github.io/Project-X-promo-site/",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "CNY" },
+    "license": "https://github.com/Dalian-No-5-Middle-School-I-T-C/Project-X/blob/main/LICENSE"
+  }
+  </script>
   <link rel="icon" type="image/png" href="./assets/favicon.png" />
   <script>
     // 主题初始化：优先用户选择，否则跟随系统；在样式表前执行避免闪烁
@@ -21,7 +42,7 @@
       } catch (e) { /* 忽略隐私模式异常，保持浅色 */ }
     })();
   </script>
-  <link rel="stylesheet" href="./style.css?v=20260811f" />
+  <link rel="stylesheet" href="./style.css?v=20260814a" />
 </head>
 <body>
 
@@ -80,7 +101,7 @@
               <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
             </a>
           </div>
-          <p class="hero-note">服务已上线 · 当前发布 v2.0.0 · v2.1.0–v2.3.0 五个里程碑已合入主干 · 由五中人，为五中人，服务五中教学</p>
+          <p class="hero-note">服务已上线 · 当前发布 v2.0.0 · v2.1.0–v2.3.0 五个里程碑已合入主干，后续持续集成中 · 由五中人，为五中人，服务五中教学</p>
         </div>
 
         <div class="hero-visual reveal">
@@ -181,7 +202,7 @@
     <!-- ============ 最新进度 ============ -->
     <section class="section">
       <div class="section-head reveal">
-        <p class="section-eyebrow">最新进度 · v2.1.0–v2.3.0 五里程碑已合入</p>
+        <p class="section-eyebrow">最新进度 · 主干持续演进</p>
         <h2 class="section-title">主干已经走到哪一步？</h2>
         <p class="section-sub">公开发布线仍为 v2.0.0；v2.1.0–v2.3.0 五个里程碑已合入主干（皮肤切换 → 引导层 → 难度/区分度 → TWAIN 扫描闭环 → 纸锋皮肤），正在随发布流程推进。下面只列已经实现并验证的能力。</p>
       </div>
@@ -257,6 +278,14 @@
           <h3 class="module-name">TWAIN 扫描链路闭环</h3>
           <p class="module-tagline">8 项缺陷修复 · PX-COR-009 闭环</p>
           <p class="module-desc">v2.2.1 修复扫描链路全部 8 项缺陷：告别 60 秒扫描卡死，双面 / 多页不丢页，灰度 / 黑白不假彩色，中文路径可保存；TWAIN 2.5.1 SDK 入库（换机器可复现构建），扫描会话后台执行、随时可取消。</p>
+        </div>
+        <div class="module-card reveal">
+          <div class="module-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 00-4-4H6a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M19 8v6M16 11h6"/></svg>
+          </div>
+          <h3 class="module-name">学生跨班级 / 年级迁移</h3>
+          <p class="module-tagline">异动管理 · 验证加固</p>
+          <p class="module-desc">#235 学生跨班级 / 跨年级迁移落地：转班、升级不再重建账号，历史成绩随人走；#236 新增 50 项自动化验证脚本，覆盖认证、权限与安全关键链路，主干每次演进都有回归兜底。</p>
         </div>
       </div>
     </section>
@@ -346,6 +375,40 @@
           </div>
         </figcaption>
       </figure>
+
+      <!-- 辅助实机图集：侧栏工作台 + 双皮肤对比 -->
+      <div class="screenshot-gallery">
+        <figure class="gallery-item reveal">
+          <div class="browser-frame browser-frame-sm">
+            <div class="browser-chrome" aria-hidden="true">
+              <span class="chrome-dot"></span><span class="chrome-dot"></span><span class="chrome-dot"></span>
+              <span class="chrome-url">dl5zx.cn</span>
+            </div>
+            <img src="./assets/app-sidebar.png?v=20260814a" alt="试卷星侧栏工作台实机截图（纸锋 Paper Edge 皮肤）：左侧导航、快捷操作与最近考试列表" loading="lazy" />
+          </div>
+          <figcaption class="caption-item gallery-caption">
+            <span class="caption-index">05</span>
+            <div><strong>侧栏工作台</strong><br />导航、批次与快捷操作同屏，日常教学任务一屏直达</div>
+          </figcaption>
+        </figure>
+
+        <figure class="gallery-item gallery-item--skins reveal">
+          <div class="skin-compare">
+            <div class="skin-pane">
+              <img src="./assets/skin-flat-preview.png?v=20260814a" alt="明澈 Flat 2.0 皮肤引导页预览：蓝白现代风界面" loading="lazy" />
+              <span class="skin-label">明澈 Flat 2.0</span>
+            </div>
+            <div class="skin-pane">
+              <img src="./assets/skin-paper-edge-preview.png?v=20260814a" alt="纸锋 Paper Edge 皮肤引导页预览：纸面米底印刷风界面" loading="lazy" />
+              <span class="skin-label">纸锋 Paper Edge</span>
+            </div>
+          </div>
+          <figcaption class="caption-item gallery-caption">
+            <span class="caption-index">06</span>
+            <div><strong>双皮肤对比</strong><br />首次进入登录页前二选一引导，明暗两维度正交，偏好账号级持久化</div>
+          </figcaption>
+        </figure>
+      </div>
     </section>
 
     <!-- ============ 全流程 ============ -->
@@ -541,36 +604,36 @@
           <p class="section-sub dark">从架构书到权限模型，所有设计与实现细节都以文档形式沉淀在仓库中。</p>
         </div>
         <div class="docs-grid">
-          <div class="doc-card reveal">
-            <h3>项目架构书</h3>
+          <a class="doc-card reveal" href="https://github.com/Dalian-No-5-Middle-School-I-T-C/Project-X/blob/main/readus/ARCHITECTURE.md" target="_blank" rel="noopener" aria-label="打开 Project-X 项目架构书（GitHub）">
+            <h3>项目架构书 <svg class="doc-link-icon" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></h3>
             <p>技术栈全景、数据流架构、目录结构与构建流程，一份文档看懂整个系统。</p>
             <span class="doc-meta">ARCHITECTURE · 16 章</span>
-          </div>
-          <div class="doc-card reveal">
-            <h3>用户指南</h3>
+          </a>
+          <a class="doc-card reveal" href="https://github.com/Dalian-No-5-Middle-School-I-T-C/Project-X/blob/main/user%20guide/Project-X用户使用说明.md" target="_blank" rel="noopener" aria-label="打开 Project-X 用户指南（GitHub）">
+            <h3>用户指南 <svg class="doc-link-icon" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></h3>
             <p>面向教师与管理员的操作手册：从设计第一张答题卡到生成成绩报告。</p>
             <span class="doc-meta">USER GUIDE</span>
-          </div>
-          <div class="doc-card reveal">
-            <h3>数据库文档</h3>
+          </a>
+          <a class="doc-card reveal" href="https://github.com/Dalian-No-5-Middle-School-I-T-C/Project-X/blob/main/readus/DATABASE.md" target="_blank" rel="noopener" aria-label="打开 Project-X 数据库文档（GitHub）">
+            <h3>数据库文档 <svg class="doc-link-icon" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></h3>
             <p>SQLite 表结构、WAL 日志模式、数据保留策略与迁移脚本说明。</p>
             <span class="doc-meta">DATABASE.md · v0.2.0</span>
-          </div>
-          <div class="doc-card reveal">
-            <h3>权限模型</h3>
+          </a>
+          <a class="doc-card reveal" href="https://github.com/Dalian-No-5-Middle-School-I-T-C/Project-X/blob/main/readus/ACCOUNT-CONTROL.md" target="_blank" rel="noopener" aria-label="打开 Project-X 权限模型文档（GitHub）">
+            <h3>权限模型 <svg class="doc-link-icon" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></h3>
             <p>RBAC 三级权限矩阵，认证、权限与安全关键链路持续自动化验证。</p>
             <span class="doc-meta">SECURITY · RBAC</span>
-          </div>
-          <div class="doc-card reveal">
-            <h3>原生模块</h3>
+          </a>
+          <a class="doc-card reveal" href="https://github.com/Dalian-No-5-Middle-School-I-T-C/Project-X/blob/main/readus/TWAIN驱动问题研究报告.md" target="_blank" rel="noopener" aria-label="打开 Project-X 原生模块 / TWAIN 研究报告（GitHub）">
+            <h3>原生模块 <svg class="doc-link-icon" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></h3>
             <p>答题卡识别引擎与 TWAIN 扫描桥的 C++ 实现细节与编译指南。</p>
             <span class="doc-meta">C++17 · OpenCV 4.13 · TWAIN 2.5.1</span>
-          </div>
-          <div class="doc-card reveal">
-            <h3>开源许可</h3>
+          </a>
+          <a class="doc-card reveal" href="https://github.com/Dalian-No-5-Middle-School-I-T-C/Project-X/blob/main/LICENSE" target="_blank" rel="noopener" aria-label="打开 Project-X 开源许可证（GitHub）">
+            <h3>开源许可 <svg class="doc-link-icon" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></h3>
             <p>GPL-3.0 全开源源码，欢迎审阅、复刻与二次开发。</p>
             <span class="doc-meta">LICENSE · GPL-3.0</span>
-          </div>
+          </a>
         </div>
       </div>
     </section>
@@ -648,6 +711,6 @@
     <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
   </button>
 
-  <script type="module" src="./main.js?v=20260811e"></script>
+  <script type="module" src="./main.js?v=20260814a"></script>
 </body>
 </html>
