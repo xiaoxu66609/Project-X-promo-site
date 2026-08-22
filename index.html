@@ -42,7 +42,7 @@
       } catch (e) { /* 忽略隐私模式异常，保持浅色 */ }
     })();
   </script>
-  <link rel="stylesheet" href="./style.css?v=20260814a" />
+  <link rel="stylesheet" href="./style.css?v=20260822a" />
 </head>
 <body>
 
@@ -101,7 +101,7 @@
               <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
             </a>
           </div>
-          <p class="hero-note">服务已上线 · 当前发布 v2.0.0 · v2.1.0–v2.3.0 五个里程碑已合入主干，后续持续集成中 · 由五中人，为五中人，服务五中教学</p>
+          <p class="hero-note">服务已上线 · 当前发布 v2.2.1 · v2.2.2–v2.2.4 三批修缮已合入主干，持续集成中 · 由五中人，为五中人，服务五中教学</p>
         </div>
 
         <div class="hero-visual reveal">
@@ -110,7 +110,7 @@
               <span class="chrome-dot"></span><span class="chrome-dot"></span><span class="chrome-dot"></span>
               <span class="chrome-url">dl5zx.cn · 首页</span>
             </div>
-            <img src="./assets/app-home.png" alt="试卷星系统首页实机截图（纸锋 Paper Edge 皮肤）：模块卡片与快捷入口" loading="eager" />
+            <img src="./assets/app-home.png?v=20260822a" alt="试卷星系统首页实机截图（纸锋 Paper Edge 皮肤）：模块卡片、快捷入口与最新出分" loading="eager" />
           </figure>
           <div class="hero-float-card" aria-hidden="true">
             <span class="float-dot"></span>
@@ -122,11 +122,11 @@
       <!-- 数据带 -->
       <div class="stats-band reveal">
         <div class="stat">
-          <div class="stat-num">v2.0.0</div>
+          <div class="stat-num">v2.2.1</div>
           <div class="stat-label">当前发布版本</div>
         </div>
         <div class="stat">
-          <div class="stat-num">v2.3.0</div>
+          <div class="stat-num">v2.2.4</div>
           <div class="stat-label">最新已合入里程碑</div>
         </div>
         <div class="stat">
@@ -170,7 +170,7 @@
           </div>
           <h3 class="module-name">高速扫描</h3>
           <p class="module-tagline">扫描仪直扫或图片导入</p>
-          <p class="module-desc">TWAIN 2.5.1 SDK 直连扫描仪（v2.2.1 起内置入库），SSE 实时推送扫描进度，扫描会话后台执行、随时可取消；也支持已有图片批量导入。识别与扫描端为独立原生构建，扫描图像默认 30 天保留期，自动清理。</p>
+          <p class="module-desc">TWAIN 2.5.1 SDK 直连扫描仪（v2.2.1 起内置入库），SSE 实时推送扫描进度，扫描会话后台执行、随时可取消；也支持已有图片批量导入。识别与扫描端为独立原生构建，扫描图像默认保留 30 天、保留期可配置，阅卷中的考试永不参与清理。</p>
         </div>
         <div class="module-card reveal">
           <div class="module-icon" aria-hidden="true">
@@ -194,7 +194,7 @@
           </div>
           <h3 class="module-name">账号与权限</h3>
           <p class="module-tagline">管理师生账号</p>
-          <p class="module-desc">RBAC 三级权限模型，自动隔离数据可见范围：管理员、教师、学生各见其所。皮肤与界面偏好账号级持久化，换设备自动恢复；bcrypt 密码哈希，认证与安全关键链路均有自动化验证。</p>
+          <p class="module-desc">RBAC 三级权限模型，自动隔离数据可见范围：管理员、教师、学生各见其所。皮肤与界面偏好账号级持久化，换设备自动恢复；bcrypt 密码哈希，CSV 导出注入防护与密钥加密存储，认证与安全关键链路均有自动化验证。</p>
         </div>
       </div>
     </section>
@@ -204,7 +204,7 @@
       <div class="section-head reveal">
         <p class="section-eyebrow">最新进度 · 主干持续演进</p>
         <h2 class="section-title">主干已经走到哪一步？</h2>
-        <p class="section-sub">公开发布线仍为 v2.0.0；v2.1.0–v2.3.0 五个里程碑已合入主干（皮肤切换 → 引导层 → 难度/区分度 → TWAIN 扫描闭环 → 纸锋皮肤），正在随发布流程推进。下面只列已经实现并验证的能力。</p>
+        <p class="section-sub">公开发布线现为 v2.2.1；v2.1.0–v2.3.0 五个功能里程碑与 v2.2.2–v2.2.4 三批修缮均已合入主干，正在随发布流程推进。下面只列已经实现并验证的能力。</p>
       </div>
       <div class="module-grid">
         <div class="module-card reveal">
@@ -213,7 +213,7 @@
           </div>
           <h3 class="module-name">双皮肤视觉系统</h3>
           <p class="module-tagline">纸锋 Paper Edge + 明澈 Flat 2.0</p>
-          <p class="module-desc">v2.3.0 落地「纸锋 Paper Edge」，与「明澈 Flat 2.0」并列可选；明暗两维度正交，皮肤偏好账号级持久化，换设备自动恢复。v2.1.1 起首次进入登录页前强制二选一引导层（两张大预览卡），切换入口收敛为登录页 + 账号设置两处。</p>
+          <p class="module-desc">v2.3.0 落地「纸锋 Paper Edge」并设为默认皮肤，随时可切回「明澈 Flat 2.0」；明暗两维度正交，皮肤偏好账号级持久化，换设备自动恢复。v2.1.1 起首次进入登录页前强制二选一引导层（两张大预览卡），切换入口收敛为登录页 + 账号设置两处。</p>
         </div>
         <div class="module-card reveal">
           <div class="module-icon" aria-hidden="true">
@@ -287,6 +287,38 @@
           <p class="module-tagline">异动管理 · 验证加固</p>
           <p class="module-desc">#235 学生跨班级 / 跨年级迁移落地：转班、升级不再重建账号，历史成绩随人走；#236 新增 50 项自动化验证脚本，覆盖认证、权限与安全关键链路，主干每次演进都有回归兜底。</p>
         </div>
+        <div class="module-card reveal">
+          <div class="module-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          </div>
+          <h3 class="module-name">首页「最新出分」快捷卡片</h3>
+          <p class="module-tagline">按角色直达成绩分析</p>
+          <p class="module-desc">#238 起 Home 仪表盘新增「最新出分」短片卡：记录结考出分时间，按角色展示最新出分，科任老师按所教学科口径过滤，点一下直达该次考试的成绩分析。</p>
+        </div>
+        <div class="module-card reveal">
+          <div class="module-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M8 2v4M16 2v4M3 9h18"/><path d="M9 14l2 2 4-4"/></svg>
+          </div>
+          <h3 class="module-name">考试日历与每周审计</h3>
+          <p class="module-tagline">日历视图 + 周审计报告</p>
+          <p class="module-desc">#245 落地考试管理页日历视图，按考试日期排布、考试组关联年级；每周审计面板支持周切换与一键发布，发布回补近 5 周，教学节奏与教师工作量一目了然。</p>
+        </div>
+        <div class="module-card reveal">
+          <div class="module-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 7-10V5l-7-3-7 3v7c-1 6 7 10 7 10z"/><path d="M9 12l2 2 4-4"/></svg>
+          </div>
+          <h3 class="module-name">安全与评审加固</h3>
+          <p class="module-tagline">网阅 P0 修复 · 敏感字段加密</p>
+          <p class="module-desc">真实使用评审修复：网阅提交两项 P0 回归、成绩表桌面端分页（50 / 100 / 200 每页）、扫描图像保留期可配置；CSV 导出公式注入防护、首次改密清空初始口令，AI 密钥与初始口令 AES-256-GCM 加密存储。</p>
+        </div>
+        <div class="module-card reveal">
+          <div class="module-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+          </div>
+          <h3 class="module-name">背景图层级修复</h3>
+          <p class="module-tagline">自定义背景不再压住控件</p>
+          <p class="module-desc">v2.2.4 修复自定义背景图浮层错用弹层层级的问题：背景图沉到内容之下，卡片与按钮依旧清晰可读；未设置背景图时外观零回归。</p>
+        </div>
       </div>
     </section>
 
@@ -346,7 +378,7 @@
       <div class="section-head reveal">
         <p class="section-eyebrow">实机界面</p>
         <h2 class="section-title">打开浏览器，就是工作台。</h2>
-        <p class="section-sub">教师与学生走浏览器，扫描端是 Electron 桌面应用，学生另有微信小程序随时查分。下图为系统首页实机截图（纸锋 Paper Edge 皮肤，自 v2.3.0 起与明澈 Flat 2.0 并列可选）。</p>
+        <p class="section-sub">教师与学生走浏览器，扫描端是 Electron 桌面应用，学生另有微信小程序随时查分。下图为系统首页实机截图（纸锋 Paper Edge 皮肤，自 v2.3.0 起为默认皮肤，可随时切回明澈 Flat 2.0）。</p>
       </div>
       <figure class="screenshot-showcase reveal">
         <div class="browser-frame browser-frame-lg">
@@ -354,7 +386,7 @@
             <span class="chrome-dot"></span><span class="chrome-dot"></span><span class="chrome-dot"></span>
             <span class="chrome-url">https://dl5zx.cn/</span>
           </div>
-          <img src="./assets/app-home.png" alt="试卷星系统首页实机截图（纸锋 Paper Edge 皮肤）：模块卡片、快捷入口与最新考试动态" loading="lazy" />
+          <img src="./assets/app-home.png?v=20260822a" alt="试卷星系统首页实机截图（纸锋 Paper Edge 皮肤）：模块卡片、快捷入口与最新考试动态" loading="lazy" />
         </div>
         <figcaption class="screenshot-caption">
           <div class="caption-item">
@@ -381,17 +413,33 @@
         <figure class="gallery-item gallery-item--skins reveal">
           <div class="skin-compare">
             <div class="skin-pane">
-              <img src="./assets/skin-flat-preview.png?v=20260814a" alt="明澈 Flat 2.0 皮肤引导页预览：蓝白现代风界面" loading="lazy" />
+              <img src="./assets/skin-flat-preview.png?v=20260822a" alt="明澈 Flat 2.0 皮肤引导页预览：蓝白现代风界面" loading="lazy" />
               <span class="skin-label">明澈 Flat 2.0</span>
             </div>
             <div class="skin-pane">
-              <img src="./assets/skin-paper-edge-preview.png?v=20260814a" alt="纸锋 Paper Edge 皮肤引导页预览：纸面米底印刷风界面" loading="lazy" />
+              <img src="./assets/skin-paper-edge-preview.png?v=20260822a" alt="纸锋 Paper Edge 皮肤引导页预览：纸面米底印刷风界面" loading="lazy" />
               <span class="skin-label">纸锋 Paper Edge</span>
             </div>
           </div>
           <figcaption class="caption-item gallery-caption">
             <span class="caption-index">05</span>
             <div><strong>双皮肤对比</strong><br />首次进入登录页前二选一引导，明暗两维度正交，偏好账号级持久化</div>
+          </figcaption>
+        </figure>
+        <figure class="gallery-item gallery-item--skins reveal">
+          <div class="skin-compare">
+            <div class="skin-pane">
+              <img src="./assets/exam-calendar.png?v=20260822a" alt="考试管理日历视图实机截图：按考试日期在日历上显示考试角标" loading="lazy" />
+              <span class="skin-label">考试日历视图</span>
+            </div>
+            <div class="skin-pane">
+              <img src="./assets/weekly-audit.png?v=20260822a" alt="每周考试审计报告实机截图：周统计、班级对比与薄弱题目 Top 5" loading="lazy" />
+              <span class="skin-label">每周考试审计</span>
+            </div>
+          </div>
+          <figcaption class="caption-item gallery-caption">
+            <span class="caption-index">06</span>
+            <div><strong>考试日历与每周审计</strong><br />考试管理页日历视图按考试日期排布；成绩分析页每周审计支持周切换、一键发布与薄弱题目 Top 5</div>
           </figcaption>
         </figure>
       </div>
@@ -638,7 +686,7 @@
         </div>
         <div class="stack-card reveal">
           <h3 class="stack-name">双数据库模式</h3>
-          <p class="stack-desc">本地 SQLite 零依赖离线可用（WAL 模式提升并发读），或远程 MariaDB 生产部署，附一键建库与迁移脚本。</p>
+          <p class="stack-desc">本地 SQLite 零依赖离线可用（WAL 模式提升并发读），或远程 MariaDB 生产部署；两种后端均支持一键导入演示数据，附一键建库与迁移脚本。</p>
         </div>
         <div class="stack-card reveal">
           <h3 class="stack-name">权限与安全</h3>
@@ -697,6 +745,6 @@
     <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
   </button>
 
-  <script type="module" src="./main.js?v=20260814a"></script>
+  <script type="module" src="./main.js?v=20260822a"></script>
 </body>
 </html>

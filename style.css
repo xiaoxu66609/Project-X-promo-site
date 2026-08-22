@@ -4,7 +4,7 @@
    ============================================================ */
 
 /* 内联 Logo（data URI，免外部请求，移动端必加载） */
-@import "./assets/logo-datauri.css?v=20260814a";
+@import "./assets/logo-datauri.css?v=20260822a";
 
 :root {
   /* color.labels */
