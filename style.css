@@ -1256,6 +1256,75 @@ html[data-theme="dark"] .skin-pane img:hover {
 
 .tag:hover { background: var(--fill-f2); color: var(--label-primary); }
 
+/* 小程序卡片占位符 */
+.mp-placeholder {
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mp-placeholder svg {
+  width: 64px;
+  height: 64px;
+  stroke: var(--kimi-blue);
+  opacity: 0.9;
+}
+
+/* 数据洞察跨列卡片 */
+.module-card--wide {
+  grid-column: 1 / -1;
+  padding: 32px;
+}
+
+.accent-gradient {
+  background: linear-gradient(135deg, var(--kimi-blue), var(--brand-to));
+  color: #fff;
+}
+
+.metric-demo {
+  margin-top: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+
+.metric-badge {
+  font-family: "Geist Mono", ui-monospace, monospace;
+  font-size: 11px;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 4px 10px;
+  border-radius: 12px;
+  color: #fff;
+}
+
+.metric-p {
+  font-family: "Geist Mono", ui-monospace, monospace;
+  font-size: 13px;
+  font-weight: 600;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 6px 12px;
+  border-radius: var(--radius-full);
+}
+
+.metric-d {
+  font-family: "Geist Mono", ui-monospace, monospace;
+  font-size: 13px;
+  font-weight: 600;
+  background: var(--kimi-blue);
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: var(--radius-full);
+}
+
+.metric-d.accent {
+  box-shadow: 0 2px 8px rgba(46, 68, 255, 0.3);
+}
+
 /* ============ 蓝色 CTA ============ */
 .cta-hero {
   margin-top: 96px;
