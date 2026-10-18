@@ -3,6 +3,7 @@
 试卷星 Project-X 官方宣传站 —— 大连市第五中学信息化部自研智能阅卷与学情分析系统的对外展示页。
 
 - **在线地址**：https://xiaoxu66609.github.io/Project-X-promo-site/
+- **交互舞台**：https://xiaoxu66609.github.io/Project-X-promo-site/stage/ （莱茵实验室的场景和动效，内容是本宣传站与主站的纸锋研究）
 - **主仓库**：https://github.com/Dalian-No-5-Middle-School-I-T-C/Project-X
 - **页面**：`index.html`（首页）、`sponsor.html`（赞助页）
 - **设计皮肤**：纸锋 Paper Edge（对齐主仓库 v2.3.0 `design/tokens.css`），支持浅色 / 深色双主题

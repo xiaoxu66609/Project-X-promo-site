@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title>未找到</title>
+  <script>
+    (function () {
+      var path = location.pathname + location.search + location.hash;
+      if (path.indexOf('/Project-X-promo-site/stage/') === 0) {
+        try { sessionStorage.setItem('px-stage-path', path); } catch (e) {}
+        location.replace('/Project-X-promo-site/stage/');
+      }
+    })();
+  </script>
+</head>
+<body>
+  <p>没有这一页。<a href="/Project-X-promo-site/">回宣传站</a></p>
+</body>
+</html>
