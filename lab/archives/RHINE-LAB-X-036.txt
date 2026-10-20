@@ -1,0 +1,17 @@
+﻿RHINE LAB · INTERNAL DATABASE
+FILE X-036 / v2.7.0 整卡
+V2.7.0
+
+科室：发布线
+编目范围：2026-10-14
+相关人物：阅卷教师
+访问范围：REFERENCE AREA
+
+v2.7.0 的标题是整卡改分和旧卷补识别。Ubuntu 服务端包里有单独的识别器，只处理已经存在、但缺少坐标的异常卷。
+
+研究记录
+1. 普通扫描、上传和批阅仍走原来的链路。
+2. MariaDB 旧库升级会补订正快照表。
+
+设定参考：https://github.com/Dalian-No-5-Middle-School-I-T-C/Project-X/blob/main/readus/%E6%95%B4%E5%8D%A1%E6%94%B9%E5%88%86%E8%AF%B4%E6%98%8E.md
+本文依据 Project-X 公开文档整理，不是系统界面截图，也不是游戏原文。

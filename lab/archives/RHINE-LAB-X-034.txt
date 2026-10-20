@@ -1,0 +1,17 @@
+﻿RHINE LAB · INTERNAL DATABASE
+FILE X-034 / v2.6.0 原卷与订阅
+V2.6.0
+
+科室：发布线
+编目范围：2026-09-25
+相关人物：信息化部
+访问范围：REFERENCE AREA
+
+v2.6.0 同时放上原卷展示、逐题正确答案和成绩发布的微信订阅消息。
+
+研究记录
+1. 迁移避开了和班主任字段撞号。
+2. 管理端要在全局设置里手动点「开始自检」，避免每次打开都去取微信令牌。
+
+设定参考：https://github.com/Dalian-No-5-Middle-School-I-T-C/Project-X/blob/main/readus/WECHAT-GRADE-RELEASE-%E9%83%A8%E7%BD%B2%E4%B8%8E%E6%8E%92%E9%94%99.md
+本文依据 Project-X 公开文档整理，不是系统界面截图，也不是游戏原文。

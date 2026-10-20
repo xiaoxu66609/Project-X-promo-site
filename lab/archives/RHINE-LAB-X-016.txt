@@ -1,0 +1,17 @@
+﻿RHINE LAB · INTERNAL DATABASE
+FILE X-016 / 原图保留
+SCAN RETENTION
+
+科室：扫描端
+编目范围：默认 30 天
+相关人物：管理员
+访问范围：REFERENCE AREA
+
+扫描原图保留天数可用 PROJECTX_SCAN_RETENTION_DAYS 配置，缺省 30 天。阅卷中的考试不参与清理。
+
+研究记录
+1. 超期、保留期内、永久保留和未结考会分开计数。
+2. 识别结果进成绩库，不跟原图同一天删除。
+
+设定参考：https://github.com/Dalian-No-5-Middle-School-I-T-C/Project-X/blob/main/readus/CHANGELOG.md
+本文依据 Project-X 公开文档整理，不是系统界面截图，也不是游戏原文。

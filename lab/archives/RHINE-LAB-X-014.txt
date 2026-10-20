@@ -1,0 +1,17 @@
+﻿RHINE LAB · INTERNAL DATABASE
+FILE X-014 / 红笔分数格
+RED-PEN CELLS
+
+科室：识别引擎
+编目范围：2026-10-17
+相关人物：阅卷教师
+访问范围：REFERENCE AREA
+
+主观题手写分数格靠红色划线识别。整页一张红笔都没读到时给出可执行告警，而不是直接当 0 分。
+
+研究记录
+1. 看得到红笔但没采纳，和整页都是灰线，文案不同。
+2. 斜线判定的原生阈值这次没有改。
+
+设定参考：https://github.com/Dalian-No-5-Middle-School-I-T-C/Project-X/blob/main/readus/CHANGELOG.md
+本文依据 Project-X 公开文档整理，不是系统界面截图，也不是游戏原文。

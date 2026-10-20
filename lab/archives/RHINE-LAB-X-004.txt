@@ -1,0 +1,17 @@
+﻿RHINE LAB · INTERNAL DATABASE
+FILE X-004 / 纸锋与明澈
+PAPER EDGE AND FLAT
+
+科室：界面
+编目范围：v2.3.0 起默认纸锋
+相关人物：账号
+访问范围：REFERENCE AREA
+
+外观有两套皮肤：纸锋 Paper Edge 与明澈 Flat 2.0。v2.3.0 起默认是纸锋。明暗和皮肤是分开的两档。
+
+研究记录
+1. 首次进入登录页前要在两张预览里选一次。
+2. 偏好记在账号上，换设备会跟着账号回来。扫描端从 v2.5.0 起自己也能换。
+
+设定参考：https://github.com/Dalian-No-5-Middle-School-I-T-C/Project-X/blob/main/readus/SKIN-THEME.md
+本文依据 Project-X 公开文档整理，不是系统界面截图，也不是游戏原文。

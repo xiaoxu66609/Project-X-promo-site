@@ -1,0 +1,17 @@
+﻿RHINE LAB · INTERNAL DATABASE
+FILE X-026 / 大考组与并列
+EXAM GROUPS
+
+科室：成绩分析
+编目范围：大考 6 个页签
+相关人物：教研组
+访问范围：REFERENCE AREA
+
+多场考试可以放进一个大考组，按概览、成绩、题目、班级、总体和 AI 来看。排名遇同分并列，下一名跳号。
+
+研究记录
+1. 天梯默认看到年级前十，但截断线落在并列组中间时，这一组会一起出现。
+2. 跨考试可以按一周、手工挑选或已保存的组来加总分。
+
+设定参考：https://github.com/Dalian-No-5-Middle-School-I-T-C/Project-X/blob/main/README.md
+本文依据 Project-X 公开文档整理，不是系统界面截图，也不是游戏原文。

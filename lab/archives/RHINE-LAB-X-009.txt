@@ -1,0 +1,17 @@
+﻿RHINE LAB · INTERNAL DATABASE
+FILE X-009 / 高速扫描
+TWAIN BRIDGE
+
+科室：扫描端
+编目范围：TWAIN 2.5.1
+相关人物：扫描端操作员
+访问范围：REFERENCE AREA
+
+扫描端用 C++ TWAIN 桥直连扫描仪，也支持导入已有图片。进度用 SSE 推送。
+
+研究记录
+1. v2.2.1 修过扫描卡死、丢页、假彩色和中文路径。后面的版本继续改默认色彩、双面收尾和续纸。
+2. DSM 只从安装目录或 Windows 目录等受信路径加载。
+
+设定参考：https://github.com/Dalian-No-5-Middle-School-I-T-C/Project-X/blob/main/readus/TWAIN%E9%A9%B1%E5%8A%A8%E9%97%AE%E9%A2%98%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A.md
+本文依据 Project-X 公开文档整理，不是系统界面截图，也不是游戏原文。

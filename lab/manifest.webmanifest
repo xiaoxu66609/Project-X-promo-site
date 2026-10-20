@@ -1,0 +1,17 @@
+{
+  "id": "./",
+  "name": "Project-X · Rhine Lab",
+  "short_name": "Project-X",
+  "description": "Project-X 研究档案终端。界面与模型来自 Rhine Lab Analysis OS，档案内容来自主站公开文档。",
+  "lang": "zh-CN",
+  "start_url": "./?source=pwa",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#e8e5e1",
+  "theme_color": "#e8e5e1",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

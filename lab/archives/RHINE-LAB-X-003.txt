@@ -1,0 +1,17 @@
+﻿RHINE LAB · INTERNAL DATABASE
+FILE X-003 / 六段工作流
+SIX MODULES
+
+科室：信息化部
+编目范围：README 功能特性
+相关人物：管理员
+访问范围：REFERENCE AREA
+
+README 把能力写成一条链：答题卡设计、考试管理、扫描识别、网上阅卷、成绩分析、账号与权限。
+
+研究记录
+1. 设计器导出印刷级 PDF，扫描端负责直扫和导入。
+2. 分析侧包含难度 P、区分度 D、大考组和并列排名。
+
+设定参考：https://github.com/Dalian-No-5-Middle-School-I-T-C/Project-X/blob/main/README.md
+本文依据 Project-X 公开文档整理，不是系统界面截图，也不是游戏原文。

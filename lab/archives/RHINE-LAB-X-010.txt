@@ -1,0 +1,17 @@
+﻿RHINE LAB · INTERNAL DATABASE
+FILE X-010 / 默认识别为彩色
+COLOR BY DEFAULT
+
+科室：扫描端
+编目范围：v2.7.1
+相关人物：扫描端操作员
+访问范围：REFERENCE AREA
+
+v2.7.1 把扫描色彩默认改成彩色。面板初值、会话入库和原生桥的缺省一致。显式选的灰度或黑白仍然有效。
+
+研究记录
+1. 含红笔分数格的卡，灰度或黑白会被升成彩色再送去识别。
+2. 没有分数格的卡可以继续用灰度或黑白。
+
+设定参考：https://github.com/Dalian-No-5-Middle-School-I-T-C/Project-X/blob/main/readus/CHANGELOG.md
+本文依据 Project-X 公开文档整理，不是系统界面截图，也不是游戏原文。

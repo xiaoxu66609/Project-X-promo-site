@@ -1,0 +1,17 @@
+﻿RHINE LAB · INTERNAL DATABASE
+FILE X-039 / 权限不止角色名
+DATA SCOPE
+
+科室：账号
+编目范围：2026-10 安全整改
+相关人物：管理员
+访问范围：REFERENCE AREA
+
+管理员、教师、学生之外，教师还可以是学科老师、班主任或学年主任。每条考试数据还要再过一遍是不是这个人的范围。
+
+研究记录
+1. 学生只能读自己的成绩和自己参加过的考试榜。
+2. 文档已把「未设置就不拦截」改成：未设置即强制登录，只有明确写成 0 或 false 才关闭。
+
+设定参考：https://github.com/Dalian-No-5-Middle-School-I-T-C/Project-X/blob/main/readus/ACCOUNT-CONTROL.md
+本文依据 Project-X 公开文档整理，不是系统界面截图，也不是游戏原文。

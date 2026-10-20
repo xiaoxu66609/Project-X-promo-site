@@ -1,0 +1,17 @@
+﻿RHINE LAB · INTERNAL DATABASE
+FILE X-031 / 学生能看到什么
+STUDENT VIEW
+
+科室：学生端
+编目范围：v2.6.0
+相关人物：学生
+访问范围：REFERENCE AREA
+
+未公布的考试不会出现在学生列表里，单场详情按未公布处理。公布后可以看排名、逐题和百分位。
+
+研究记录
+1. 原卷入口跟着 paper_visible 走。
+2. 网页和小程序都能进已开放的原卷；小程序下载图片时令牌不放进网址。
+
+设定参考：https://github.com/Dalian-No-5-Middle-School-I-T-C/Project-X/blob/main/readus/%E5%8E%9F%E5%8D%B7%E4%B8%8E%E9%80%90%E9%A2%98%E7%AD%94%E6%A1%88-%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E.md
+本文依据 Project-X 公开文档整理，不是系统界面截图，也不是游戏原文。

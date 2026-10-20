@@ -1,0 +1,17 @@
+﻿RHINE LAB · INTERNAL DATABASE
+FILE X-019 / 试卷池领卷
+PAPER POOL
+
+科室：阅卷室
+编目范围：v1.10.2
+相关人物：阅卷教师
+访问范围：REFERENCE AREA
+
+教师从试卷池领取下一份。领取用原子更新，避免两个人拿到同一份。
+
+研究记录
+1. 提交之后按状态回到池里或离开。
+2. 管理员可以看汇总并释放任务。
+
+设定参考：https://github.com/Dalian-No-5-Middle-School-I-T-C/Project-X/blob/main/readus/CHANGELOG.md
+本文依据 Project-X 公开文档整理，不是系统界面截图，也不是游戏原文。

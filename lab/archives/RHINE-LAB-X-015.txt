@@ -1,0 +1,17 @@
+﻿RHINE LAB · INTERNAL DATABASE
+FILE X-015 / 异常卷人工处理
+EXCEPTION SHEETS
+
+科室：扫描端
+编目范围：v2.6.1
+相关人物：阅卷教师
+访问范围：REFERENCE AREA
+
+重复冲突和历史会话可以按记录恢复。损坏的图像不能靠手填学号绕过识别，需要重扫或换清晰图片。
+
+研究记录
+1. 未涂学号的卷可以先核对再订正。
+2. 已保存的原卷和成绩快照受到保护。
+
+设定参考：https://github.com/Dalian-No-5-Middle-School-I-T-C/Project-X/blob/main/readus/CHANGELOG.md
+本文依据 Project-X 公开文档整理，不是系统界面截图，也不是游戏原文。

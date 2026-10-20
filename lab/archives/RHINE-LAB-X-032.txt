@@ -1,0 +1,17 @@
+﻿RHINE LAB · INTERNAL DATABASE
+FILE X-032 / 班级口径
+CLASS MEMBERSHIP
+
+科室：成绩分析
+编目范围：2026-10
+相关人物：班主任
+访问范围：REFERENCE AREA
+
+学生可以同时关联多个在读班。展示班级优先用未归档的在读班，再看加入时间。
+
+研究记录
+1. 调班只移除原来的班级关联，不把历史归档班删掉。
+2. 删除班级和年级改为归档，历史考试还留着。
+
+设定参考：https://github.com/Dalian-No-5-Middle-School-I-T-C/Project-X/blob/main/readus/CHANGELOG.md
+本文依据 Project-X 公开文档整理，不是系统界面截图，也不是游戏原文。

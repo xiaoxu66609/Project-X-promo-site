@@ -1,0 +1,17 @@
+﻿RHINE LAB · INTERNAL DATABASE
+FILE X-011 / 双面要等背面
+DUPLEX FINISH
+
+科室：扫描端
+编目范围：2026-10-17
+相关人物：扫描端操作员
+访问范围：REFERENCE AREA
+
+双面批次在只拿到正面时不再报整批成功。背面到达才算这张纸完成；等不到背面就保留正面并报部分失败。
+
+研究记录
+1. 单面仍按结束码和张数判断批次结束。
+2. 零红笔的分数格页会告警，不静默按 0 分入库。
+
+设定参考：https://github.com/Dalian-No-5-Middle-School-I-T-C/Project-X/blob/main/readus/CHANGELOG.md
+本文依据 Project-X 公开文档整理，不是系统界面截图，也不是游戏原文。

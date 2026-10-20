@@ -1,0 +1,17 @@
+﻿RHINE LAB · INTERNAL DATABASE
+FILE X-023 / 每题分值只有一个数
+SCORE PER QUESTION
+
+科室：答题卡设计
+编目范围：2026-10-19
+相关人物：学科老师
+访问范围：REFERENCE AREA
+
+客观题「每题分值」会写进已经展开的逐题分数。卡面标题和导出弹窗都按逐题分数相加。
+
+研究记录
+1. 先点过标准答案再改分值时，不再一边显示 15 分、一边按 50 分导出。
+2. 库里已经存成 5 分的旧卡不会自动改回去，需要老师再填一次。
+
+设定参考：https://github.com/Dalian-No-5-Middle-School-I-T-C/Project-X/blob/main/readus/CHANGELOG.md
+本文依据 Project-X 公开文档整理，不是系统界面截图，也不是游戏原文。

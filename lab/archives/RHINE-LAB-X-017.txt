@@ -1,0 +1,17 @@
+﻿RHINE LAB · INTERNAL DATABASE
+FILE X-017 / 客观题与主观题
+OBJECTIVE AND SUBJECTIVE
+
+科室：阅卷室
+编目范围：README
+相关人物：阅卷教师
+访问范围：REFERENCE AREA
+
+客观题按填涂和标准答案判分。主观题把作答切成大题图，进入 2P 或 3P 多评，分差过大进入仲裁。
+
+研究记录
+1. 满分小于 20 分走枚举大按钮，大于等于 20 分走十位、个位和十分位。
+2. 退出会留下进度和草稿分。
+
+设定参考：https://github.com/Dalian-No-5-Middle-School-I-T-C/Project-X/blob/main/README.md
+本文依据 Project-X 公开文档整理，不是系统界面截图，也不是游戏原文。

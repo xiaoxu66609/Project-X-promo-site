@@ -1,0 +1,17 @@
+﻿RHINE LAB · INTERNAL DATABASE
+FILE X-008 / 项目从哪天算起
+PROJECT START
+
+科室：信息化部
+编目范围：2026-06-07
+相关人物：信息化部
+访问范围：REFERENCE AREA
+
+README 写明仓库于 2026-06-07 建库。建库之前的日期和版本按文档说明视为误记。
+
+研究记录
+1. v0.1.0 在 06-08 打包，v1.0.0 在 06-12 打标。
+2. 下个里程碑在 README 里仍是 TBD。
+
+设定参考：https://github.com/Dalian-No-5-Middle-School-I-T-C/Project-X/blob/main/README.md
+本文依据 Project-X 公开文档整理，不是系统界面截图，也不是游戏原文。

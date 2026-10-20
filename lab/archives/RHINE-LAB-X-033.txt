@@ -1,0 +1,17 @@
+﻿RHINE LAB · INTERNAL DATABASE
+FILE X-033 / v2.4 到 v2.5 的扫描端
+SCANNER PACKAGING
+
+科室：扫描端
+编目范围：v2.4.1–v2.5.7
+相关人物：扫描端操作员
+访问范围：REFERENCE AREA
+
+v2.4.1 修好 32 位打包和快捷方式启动目录。v2.5.0 让扫描端自己换肤。v2.5.5 起运行库随包。v2.5.6 起检测失败不再把扫描按钮藏起来。
+
+研究记录
+1. v2.5.1 把上传从界面组件里拆出去，避免扫完面板一关就把上传取消。
+2. v2.5.7 处理过多张只进一张、以及识别器缺少运行库起不来的问题。
+
+设定参考：https://github.com/Dalian-No-5-Middle-School-I-T-C/Project-X/blob/main/readus/CHANGELOG.md
+本文依据 Project-X 公开文档整理，不是系统界面截图，也不是游戏原文。

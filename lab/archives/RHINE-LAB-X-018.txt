@@ -1,0 +1,17 @@
+﻿RHINE LAB · INTERNAL DATABASE
+FILE X-018 / PAD 批注
+PAD MARKUP
+
+科室：阅卷室
+编目范围：PAD 优先界面
+相关人物：阅卷教师
+访问范围：REFERENCE AREA
+
+批阅界面是左图右分，可以缩放和旋转 90 度。批注包含文字和手写，并处理手掌误触。学生端可以回看批注。
+
+研究记录
+1. 点选分数后按配置提交并跳到下一份。
+2. 仲裁人可以留空，系统再把争议卷改派给还没评过该生的已分配教师。
+
+设定参考：https://github.com/Dalian-No-5-Middle-School-I-T-C/Project-X/blob/main/README.md
+本文依据 Project-X 公开文档整理，不是系统界面截图，也不是游戏原文。

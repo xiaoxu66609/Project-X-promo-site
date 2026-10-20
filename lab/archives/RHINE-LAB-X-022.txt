@@ -1,0 +1,17 @@
+﻿RHINE LAB · INTERNAL DATABASE
+FILE X-022 / 改分后的公布策略
+UNPUBLISH SWITCH
+
+科室：考试管理
+编目范围：全局设置
+相关人物：管理员
+访问范围：REFERENCE AREA
+
+改分、改答案、仲裁、网阅、扫描入库和赋分重算都会碰到公布状态。默认保持已公布，只更新排名和统计。
+
+研究记录
+1. 管理员可以打开「成绩变动时自动撤回公布」。打开后会写审计。
+2. 这个开关不自动重新公布已经撤回的考试。
+
+设定参考：https://github.com/Dalian-No-5-Middle-School-I-T-C/Project-X/blob/main/readus/CHANGELOG.md
+本文依据 Project-X 公开文档整理，不是系统界面截图，也不是游戏原文。

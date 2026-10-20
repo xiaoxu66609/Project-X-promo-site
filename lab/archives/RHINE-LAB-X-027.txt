@@ -1,0 +1,17 @@
+﻿RHINE LAB · INTERNAL DATABASE
+FILE X-027 / 原卷与逐题答案
+ORIGINAL PAPER
+
+科室：成绩分析
+编目范围：v2.6.0
+相关人物：学科老师
+访问范围：REFERENCE AREA
+
+考试可以单独打开「显示原卷」。教师上传答案页后，学生在成绩已公布并且开关打开时，先看卷再看自己的作答。
+
+研究记录
+1. 四个条件缺一个，原卷接口就返回 404。
+2. 答案保存是整场替换，加载失败时不允许把空表存回去。
+
+设定参考：https://github.com/Dalian-No-5-Middle-School-I-T-C/Project-X/blob/main/readus/%E5%8E%9F%E5%8D%B7%E4%B8%8E%E9%80%90%E9%A2%98%E7%AD%94%E6%A1%88-%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E.md
+本文依据 Project-X 公开文档整理，不是系统界面截图，也不是游戏原文。

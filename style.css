@@ -1,10 +1,11 @@
 /* ============================================================
    试卷星 Project-X 官方宣传页 · 纸锋 Paper Edge
-   对齐 Project-X v2.3.0 design/tokens.css [data-skin="paper-edge"]
+   纸锋色值仍取 Project-X v2.3.0 design/tokens.css [data-skin="paper-edge"]
+   产品版本以主仓库 README 的 v2.7.1 为准，不在这里改色板
    ============================================================ */
 
 /* 内联 Logo（data URI，免外部请求，移动端必加载） */
-@import "./assets/logo-datauri.css?v=20260822a";
+@import "./assets/logo-datauri.css?v=20261020";
 
 :root {
   /* color.labels */

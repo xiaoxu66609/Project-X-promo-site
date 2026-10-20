@@ -1,0 +1,17 @@
+﻿RHINE LAB · INTERNAL DATABASE
+FILE X-030 / AI 读卷与弱项
+AI DIAGNOSIS
+
+科室：成绩分析
+编目范围：v1.8.0 起
+相关人物：管理员
+访问范围：REFERENCE AREA
+
+系统 AI 由管理员配置 GPT、DeepSeek 或 Gemini。它可以给题目标知识点，并按得分率看班级弱项。
+
+研究记录
+1. 教师不必自己保管系统密钥。
+2. 学生账号仍可以维护自己的 AI 服务商。AI 不代替教师给主观题打分。
+
+设定参考：https://github.com/Dalian-No-5-Middle-School-I-T-C/Project-X/blob/main/readus/AI%E6%88%90%E7%BB%A9%E5%88%86%E6%9E%90.md
+本文依据 Project-X 公开文档整理，不是系统界面截图，也不是游戏原文。
