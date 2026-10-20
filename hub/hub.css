@@ -1,0 +1,83 @@
+/* Hub page only. Paper Edge: paper #F1EFE9, ink #1A1917, blue #2E44FF, square cards, hard offset. */
+.hub-main { padding-bottom: 96px; }
+
+.hub-lead {
+  max-width: 720px;
+  margin-bottom: 40px;
+}
+
+.hub-set {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  margin: 0 10px 10px 0;
+}
+
+.hub-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  min-height: 100%;
+  padding: 24px;
+  background: #F1EFE9;
+  color: #1A1917;
+  border: 1px solid #1A1917;
+  border-radius: 0;
+  box-shadow: 8px 8px 0 #1A1917;
+}
+
+.hub-index {
+  margin: 0;
+  font-family: "Geist Mono", ui-monospace, monospace;
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  color: #2E44FF;
+}
+
+.hub-card h2 {
+  margin: 0;
+  font-size: 24px;
+  line-height: 1.25;
+  font-weight: 800;
+}
+
+.hub-path {
+  margin: 0;
+  font-family: "Geist Mono", ui-monospace, monospace;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  color: #6F6D66;
+}
+
+.hub-card p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 24px;
+  color: #4A4842;
+}
+
+.hub-card .btn { margin-top: auto; }
+
+.hub-note {
+  max-width: 720px;
+  margin: 36px 0 0;
+  font-size: 14px;
+  line-height: 22px;
+  color: var(--label-secondary);
+}
+
+html[data-theme="dark"] .hub-card {
+  background: #1D1D1B;
+  color: rgba(241, 239, 233, 0.94);
+  border-color: #F1EFE9;
+  box-shadow: 8px 8px 0 #F1EFE9;
+}
+
+html[data-theme="dark"] .hub-index { color: #4A5CFF; }
+html[data-theme="dark"] .hub-path { color: rgba(241, 239, 233, 0.5); }
+html[data-theme="dark"] .hub-card p { color: rgba(241, 239, 233, 0.7); }
+
+@media (max-width: 960px) {
+  .hub-set { grid-template-columns: 1fr; }
+}

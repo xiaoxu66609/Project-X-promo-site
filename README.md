@@ -3,11 +3,12 @@
 试卷星 Project-X 官方宣传站 —— 大连市第五中学信息化部自研智能阅卷与学情分析系统的对外展示页。
 
 - **在线地址**：https://xiaoxu66609.github.io/Project-X-promo-site/
+- **交互入口**：https://xiaoxu66609.github.io/Project-X-promo-site/hub/ （首页导航只留这一个入口。三套页面仍各自运行，页内同一条小路可以回到入口或去另外两处）
 - **交互舞台**：https://xiaoxu66609.github.io/Project-X-promo-site/stage/ （莱茵实验室的场景和动效，内容是本宣传站与主站的纸锋研究）
 - **档案终端**：https://xiaoxu66609.github.io/Project-X-promo-site/lab/ （[RhineLabUI](https://github.com/LBEILC/RhineLabUI) 的三维档案界面。开场标志仍是 RHINE LAB。四十份档案换成 Project-X 主干公开事实，上游提交 `12cc5e4`）
 - **纸上行记**：https://xiaoxu66609.github.io/Project-X-promo-site/travels/ （the-masses-travels 的图版、行迹、图谱和可拆结构，内容换成试卷星公开说明。游戏贴图与音乐没有收录）
 - **主仓库**：https://github.com/Dalian-No-5-Middle-School-I-T-C/Project-X （README 当前版本 v2.7.1；GitHub Releases 扫描端标签仍为 V1.9.6）
-- **页面**：`index.html`（首页）、`sponsor.html`（赞助页）、`stage/`、`lab/`、`travels/`
+- **页面**：`index.html`（首页）、`hub/`（交互入口）、`sponsor.html`（赞助页）、`stage/`、`lab/`、`travels/`
 - **设计皮肤**：纸锋 Paper Edge（宣传站样式仍用主仓库 v2.3.0 的纸锋色值），支持浅色 / 深色双主题
 
 ## 本地开发
@@ -31,18 +32,21 @@ npm run preview    # 预览构建产物
 
 ```
 index.html / sponsor.html   页面
+hub/                        交互入口（纸锋页面，链到三套体验）
 style.css                   全站样式（含纸锋皮肤覆盖与响应式）
 main.js                     首页交互（reveal 动效 / 导航高亮 / 主题切换等）
-assets/                     图片资源（logo、截图、海报）
+assets/                     图片资源（logo、截图、海报）与三套体验共用的入口小路
 stage/                      交互舞台静态页
 lab/                        档案终端静态页（RhineLabUI 构建结果）
 travels/                    纸上行记静态页（the-masses-travels 构建结果）
 sitemap.xml / robots.txt    SEO
 ```
 
-档案终端在上游仓库用 `PAGES_BASE=/Project-X-promo-site/lab/` 构建后，把 `dist/` 放进 `lab/`。资源前缀只走 Vite 的 `base`，不另加一套 CDN 前缀。终端用查询参数切换场景，未知的 `/lab/` 路径由根目录 `404.html` 送回 `/lab/` 并保留查询串。
+首页和赞助页的导航只放「交互入口」，通向 `hub/`。三套体验不合并渲染器。`assets/px-entrance.js` 在每一处左侧放同一条小路：回到 `hub/`，或去另外两处。舞台不设置 `HYDRA_ASSETS_CDN`。
 
-纸上行记在 the-masses-travels 里用 `PAGES_BASE=/Project-X-promo-site/travels/` 构建后，把 `dist/` 放进 `travels/`。未知的 `/travels/` 路径由同一个 `404.html` 记下地址，再回到 `/travels/` 恢复。
+档案终端在上游仓库用 `PAGES_BASE=/Project-X-promo-site/lab/` 构建后，把 `dist/` 放进 `lab/`。资源前缀只走 Vite 的 `base`，不另加一套 CDN 前缀。服务工作线程的 scope 仍是 `/Project-X-promo-site/lab/`。终端用查询参数切换场景，未知的 `/lab/` 路径由根目录 `404.html` 送回 `/lab/` 并保留查询串。
+
+纸上行记在 the-masses-travels 里用 `PAGES_BASE=/Project-X-promo-site/travels/` 构建后，把 `dist/` 放进 `travels/`。未知的 `/travels/` 路径由同一个 `404.html` 记下地址，再回到 `/travels/` 恢复。未知的 `/stage/` 路径同样由这个 `404.html` 记下地址再回到 `/stage/`。`hub/` 是静态页，不走这套恢复。
 
 ## 更新检查单
 

@@ -1,0 +1,82 @@
+/* Shared way between the three experiences. Colors follow each host UI.
+   The WebGL scenes are not restyled. */
+.px-rail {
+  position: fixed;
+  z-index: 2147483646;
+  left: max(10px, env(safe-area-inset-left));
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  pointer-events: auto;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.px-rail a {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 52px;
+  min-height: 44px;
+  padding: 8px 12px;
+  font-size: 13px;
+  line-height: 1;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+  white-space: nowrap;
+  touch-action: manipulation;
+}
+
+.px-rail a + a { border-top: 1px solid transparent; }
+
+.px-rail a:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: -3px;
+}
+
+.px-rail[data-host="stage"] {
+  background: #000;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  font-family: nbarchitekt, Helvetica, Arial, sans-serif;
+}
+
+.px-rail[data-host="stage"] a { color: #fff; }
+.px-rail[data-host="stage"] a + a { border-top-color: rgba(255, 255, 255, 0.28); }
+.px-rail[data-host="stage"] a[aria-current="page"] { background: #fff; color: #000; }
+
+.px-rail[data-host="lab"] {
+  background: #e8e5e1;
+  color: #171713;
+  border: 1px solid #8e897b;
+  font-family: MiSans, "Mi Sans", "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+
+.px-rail[data-host="lab"] a { color: #171713; }
+.px-rail[data-host="lab"] a + a { border-top-color: #bcb6ac; }
+.px-rail[data-host="lab"] a[aria-current="page"] { background: #353b30; color: #f5f1e9; }
+
+.px-rail[data-host="travels"] {
+  background: #eff1ef;
+  color: #22282b;
+  border: 1px solid rgba(26, 34, 38, 0.28);
+  font-family: "Microsoft YaHei UI", "Microsoft YaHei", "PingFang SC", sans-serif;
+  letter-spacing: 0;
+}
+
+.px-rail[data-host="travels"] a { color: #22282b; letter-spacing: 0.04em; }
+.px-rail[data-host="travels"] a + a { border-top-color: rgba(26, 34, 38, 0.16); }
+.px-rail[data-host="travels"] a[aria-current="page"] {
+  background: rgba(58, 91, 194, 0.1);
+  color: #3a5bc2;
+}
+
+@media (max-width: 420px) {
+  .px-rail a { min-width: 44px; padding: 8px 10px; font-size: 12px; }
+}
