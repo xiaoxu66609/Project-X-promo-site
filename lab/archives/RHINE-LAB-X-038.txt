@@ -1,0 +1,17 @@
+﻿RHINE LAB · INTERNAL DATABASE
+FILE X-038 / 学生设置收紧
+STUDENT SETTINGS
+
+科室：账号
+编目范围：2026-10-17
+相关人物：学生
+访问范围：REFERENCE AREA
+
+学生不能再从网页改成绩显示方式和复核阈值，也不能上传或看到自定义背景。皮肤、亮暗和底部导航仍可以保存。
+
+研究记录
+1. 背景接口对学生返回 404，历史文件不删。
+2. 学生的 AI 设置页还在，不会被整页锁回客户端设置。
+
+设定参考：https://github.com/Dalian-No-5-Middle-School-I-T-C/Project-X/blob/main/readus/ACCOUNT-CONTROL.md
+本文依据 Project-X 公开文档整理，不是系统界面截图，也不是游戏原文。

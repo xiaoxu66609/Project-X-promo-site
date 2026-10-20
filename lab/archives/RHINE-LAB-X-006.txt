@@ -1,0 +1,17 @@
+﻿RHINE LAB · INTERNAL DATABASE
+FILE X-006 / 开源许可
+GPL-3.0
+
+科室：信息化部
+编目范围：LICENSE
+相关人物：信息化部
+访问范围：REFERENCE AREA
+
+Project-X 仓库许可证是 GPL-3.0。源码、问题记录和用户说明都在同一仓库。
+
+研究记录
+1. 宣传站文档卡片指向仓库里的架构、用户指南、数据库和权限说明。
+2. 爱发电地址写在 README：https://ifdian.net/a/ProjectX 。赞助不改变可以免费使用。
+
+设定参考：https://github.com/Dalian-No-5-Middle-School-I-T-C/Project-X/blob/main/LICENSE
+本文依据 Project-X 公开文档整理，不是系统界面截图，也不是游戏原文。

@@ -1,0 +1,17 @@
+﻿RHINE LAB · INTERNAL DATABASE
+FILE X-029 / 微信里的出分提醒
+WECHAT NOTICE
+
+科室：学生端
+编目范围：v2.6.0
+相关人物：学生
+访问范围：REFERENCE AREA
+
+小程序用一次性订阅。成绩公布事务提交之后，再通知已经绑定、并且这场有成绩的学生。
+
+研究记录
+1. 推送失败不会把公布回滚。
+2. 一场只推一次；一个都没送到时，撤回再公布可以重试。学生没重新授权时，微信返回 43101。
+
+设定参考：https://github.com/Dalian-No-5-Middle-School-I-T-C/Project-X/blob/main/readus/WECHAT-GRADE-RELEASE-%E9%83%A8%E7%BD%B2%E4%B8%8E%E6%8E%92%E9%94%99.md
+本文依据 Project-X 公开文档整理，不是系统界面截图，也不是游戏原文。

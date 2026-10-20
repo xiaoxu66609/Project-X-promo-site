@@ -1,0 +1,17 @@
+﻿RHINE LAB · INTERNAL DATABASE
+FILE X-024 / 打印件对得上版本
+PDF REVISION
+
+科室：答题卡设计
+编目范围：安全 R45
+相关人物：学科老师
+访问范围：REFERENCE AREA
+
+每次保存答题卡，revision 在数据库里加一。导出 PDF 可以带上这个版本；对不上就返回 409，不渲染。
+
+研究记录
+1. 自动保存大约 1.2 秒防抖，所以点导出前会先把未保存的修改送进去。
+2. 版本只认 revision，不用秒级的更新时间。
+
+设定参考：https://github.com/Dalian-No-5-Middle-School-I-T-C/Project-X/blob/main/README.md
+本文依据 Project-X 公开文档整理，不是系统界面截图，也不是游戏原文。

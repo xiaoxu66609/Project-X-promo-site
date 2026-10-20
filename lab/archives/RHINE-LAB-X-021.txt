@@ -1,0 +1,17 @@
+﻿RHINE LAB · INTERNAL DATABASE
+FILE X-021 / 成绩先不公开
+PUBLISH GATE
+
+科室：考试管理
+编目范围：2026-10-14
+相关人物：管理员
+访问范围：REFERENCE AREA
+
+批改完成不等于学生已经能看到分。教师公布之后学生端才出现这场成绩，也可以填写原因撤回。
+
+研究记录
+1. 2026-10-14 起，只要已有至少一条成绩并且考试处于阅卷或已结束，就可以公布，缺考不再挡住。
+2. 批量公布一次最多 200 场，有一场不合格就整批拒绝。
+
+设定参考：https://github.com/Dalian-No-5-Middle-School-I-T-C/Project-X/blob/main/readus/PR248-%E6%88%90%E7%BB%A9%E5%85%AC%E5%B8%83%E5%8F%91%E5%B8%83%E8%AF%B4%E6%98%8E.md
+本文依据 Project-X 公开文档整理，不是系统界面截图，也不是游戏原文。

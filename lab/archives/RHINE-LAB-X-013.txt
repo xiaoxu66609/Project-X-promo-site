@@ -1,0 +1,17 @@
+﻿RHINE LAB · INTERNAL DATABASE
+FILE X-013 / 等纸与续扫
+ADF CONTINUE
+
+科室：扫描端
+编目范围：v2.7.1 / 2026-10-16
+相关人物：扫描端操作员
+访问范围：REFERENCE AREA
+
+送纸器报当前张已经传完时，会继续等下一帧，而不是立刻结束。默认等纸时间由服务端兜成 60 秒。
+
+研究记录
+1. 达到张数上限后直接结束。
+2. 文档写明柯达 i3000 的机械走纸还要拿更新后的扫描端做现场复测。
+
+设定参考：https://github.com/Dalian-No-5-Middle-School-I-T-C/Project-X/blob/main/readus/CHANGELOG.md
+本文依据 Project-X 公开文档整理，不是系统界面截图，也不是游戏原文。

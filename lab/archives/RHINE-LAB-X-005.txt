@@ -1,0 +1,17 @@
+﻿RHINE LAB · INTERNAL DATABASE
+FILE X-005 / 数据留在学校
+ON-PREMISES DATA
+
+科室：信息化部
+编目范围：SQLite / MariaDB
+相关人物：管理员
+访问范围：REFERENCE AREA
+
+本地可以用 SQLite，远程生产用 MariaDB 10.11。成绩数据按这套自建库走，不交给外包阅卷云。
+
+研究记录
+1. 两种库都有迁移脚本。文档里的迁移水位已记到 v63。
+2. GPL-3.0 许可，不把项目写成商业 SaaS。
+
+设定参考：https://github.com/Dalian-No-5-Middle-School-I-T-C/Project-X/blob/main/readus/DATABASE.md
+本文依据 Project-X 公开文档整理，不是系统界面截图，也不是游戏原文。

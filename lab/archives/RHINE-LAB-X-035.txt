@@ -1,0 +1,17 @@
+﻿RHINE LAB · INTERNAL DATABASE
+FILE X-035 / v2.6.1 异常卷
+V2.6.1
+
+科室：发布线
+编目范围：2026-10-11
+相关人物：阅卷教师
+访问范围：REFERENCE AREA
+
+v2.6.1 处理异常卷的手动订正和缺少原指纹的历史会话。恢复时保留人工改分快照。
+
+研究记录
+1. 相同原图和识别结果的重传可以按审计撤销。
+2. 答案相同但原图不同的卷仍要人工核对。
+
+设定参考：https://github.com/Dalian-No-5-Middle-School-I-T-C/Project-X/blob/main/readus/CHANGELOG.md
+本文依据 Project-X 公开文档整理，不是系统界面截图，也不是游戏原文。

@@ -1,0 +1,17 @@
+﻿RHINE LAB · INTERNAL DATABASE
+FILE X-028 / 整卡改分
+WHOLE-CARD EDIT
+
+科室：成绩分析
+编目范围：v2.7.0
+相关人物：阅卷教师
+访问范围：REFERENCE AREA
+
+异常卷处理和成绩修改可以在完整原卷上点学号、客观题和手阅分数格。正确与异常用蓝框和红框区分，修改要显式保存。
+
+研究记录
+1. 服务器上缺少坐标的旧卷可以补识别，结果先是草稿。
+2. 草稿带服务端签名，过期或被改过的结果不会收下。
+
+设定参考：https://github.com/Dalian-No-5-Middle-School-I-T-C/Project-X/blob/main/readus/%E6%95%B4%E5%8D%A1%E6%94%B9%E5%88%86%E8%AF%B4%E6%98%8E.md
+本文依据 Project-X 公开文档整理，不是系统界面截图，也不是游戏原文。

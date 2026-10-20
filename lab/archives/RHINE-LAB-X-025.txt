@@ -1,0 +1,17 @@
+﻿RHINE LAB · INTERNAL DATABASE
+FILE X-025 / 难度与区分度
+P AND D
+
+科室：成绩分析
+编目范围：v2.2.0
+相关人物：教研组
+访问范围：REFERENCE AREA
+
+题目分析给出难度 P 和区分度 D。知识点薄弱环节的每一行也带这两项徽章。档位阈值由管理员在全局设置里改。
+
+研究记录
+1. 大考的各科卡片同样带这两项。
+2. AI 成绩工具读到的数据里也包含它们。
+
+设定参考：https://github.com/Dalian-No-5-Middle-School-I-T-C/Project-X/blob/main/README.md
+本文依据 Project-X 公开文档整理，不是系统界面截图，也不是游戏原文。

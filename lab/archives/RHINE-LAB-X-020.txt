@@ -1,0 +1,17 @@
+﻿RHINE LAB · INTERNAL DATABASE
+FILE X-020 / 晨测与大考
+QUIZ AND FORMAL
+
+科室：考试管理
+编目范围：v2.2.0
+相关人物：管理员
+访问范围：REFERENCE AREA
+
+创建考试时可选晨测或大考。晨测对教师更完整可见，大考走更细的权限。管理员可以在考试详情里切换。
+
+研究记录
+1. 同一套考试管理覆盖随堂和正式考试。
+2. 状态仍按 draft、active、grading、closed 流转。
+
+设定参考：https://github.com/Dalian-No-5-Middle-School-I-T-C/Project-X/blob/main/README.md
+本文依据 Project-X 公开文档整理，不是系统界面截图，也不是游戏原文。

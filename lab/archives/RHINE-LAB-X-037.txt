@@ -1,0 +1,17 @@
+﻿RHINE LAB · INTERNAL DATABASE
+FILE X-037 / v2.7.1 扫描复核
+V2.7.1
+
+科室：发布线
+编目范围：2026-10-15
+相关人物：扫描端操作员
+访问范围：REFERENCE AREA
+
+v2.7.1 的标题是默认彩色扫描和 ADF 续扫复核。README 的版本标记同步到这一版。
+
+研究记录
+1. 10 月 16 日和 17 日又补了 DPI、单面设备、失败批次恢复，以及双面收尾。
+2. 这些条目写在 CHANGELOG 里，还没有对应的新 GitHub Release 标签。
+
+设定参考：https://github.com/Dalian-No-5-Middle-School-I-T-C/Project-X/blob/main/readus/CHANGELOG.md
+本文依据 Project-X 公开文档整理，不是系统界面截图，也不是游戏原文。

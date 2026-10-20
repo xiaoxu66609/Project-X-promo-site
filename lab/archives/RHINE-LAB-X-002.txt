@@ -1,0 +1,17 @@
+﻿RHINE LAB · INTERNAL DATABASE
+FILE X-002 / 校内部署
+SCHOOL DEPLOYMENT
+
+科室：信息化部
+编目范围：线上系统
+相关人物：管理员
+访问范围：REFERENCE AREA
+
+线上系统地址是 https://dl5zx.cn/ 。宣传站只做说明，不代替登录后的工作台。
+
+研究记录
+1. 进入系统从宣传站顶栏或首页按钮打开这个地址。
+2. 页面上的实机截图来自已有界面，不另画没有出处的屏幕。
+
+设定参考：https://dl5zx.cn/
+本文依据 Project-X 公开文档整理，不是系统界面截图，也不是游戏原文。

@@ -10,6 +10,9 @@
         try { sessionStorage.setItem('px-stage-path', path); } catch (e) {}
         location.replace('/Project-X-promo-site/stage/');
       }
+      if (path.indexOf('/Project-X-promo-site/lab/') === 0) {
+        location.replace('/Project-X-promo-site/lab/' + location.search + location.hash);
+      }
     })();
   </script>
 </head>

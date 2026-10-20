@@ -1,0 +1,17 @@
+﻿RHINE LAB · INTERNAL DATABASE
+FILE X-012 / 答题卡版本核验
+CARD VERSION
+
+科室：扫描端
+编目范围：安全 R35
+相关人物：扫描端操作员
+访问范围：REFERENCE AREA
+
+离线期间如果服务器上的答题卡改过，旧指纹算出的分数不能静默入库。会话创建和完成都上报卡内容指纹。
+
+研究记录
+1. 对不上时返回 409 CARD_VERSION_MISMATCH，不改已有状态。
+2. 选到离线缓存时先让老师确认。
+
+设定参考：https://github.com/Dalian-No-5-Middle-School-I-T-C/Project-X/blob/main/README.md
+本文依据 Project-X 公开文档整理，不是系统界面截图，也不是游戏原文。
