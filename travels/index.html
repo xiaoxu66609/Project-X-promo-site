@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#e9eeeb"><meta name="description" content="试卷星 Project-X 纸上行记：保留平面图录的图版、行迹、图谱和可拆结构，内容是当前的阅卷与学情。"><title>试卷星 · 纸上行记</title><link rel="icon" type="image/svg+xml" href="./favicon.svg">
+<script>
+(function () {
+  var base = '/Project-X-promo-site/travels';
+  try {
+    var saved = sessionStorage.getItem('px-travels-path');
+    if (saved) {
+      sessionStorage.removeItem('px-travels-path');
+      if (saved.indexOf(base + '/') === 0) history.replaceState(null, '', saved);
+    }
+  } catch (e) {}
+})();
+</script>
+  <script type="module" crossorigin src="/Project-X-promo-site/travels/assets/index-BoLMB2Va.js"></script>
+  <link rel="modulepreload" crossorigin href="/Project-X-promo-site/travels/assets/three-kH6HoJ-h.js">
+  <link rel="stylesheet" crossorigin href="/Project-X-promo-site/travels/assets/index-DOB1-qtT.css">
+</head><body><div id="app"></div></body></html>

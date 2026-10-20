@@ -1,0 +1,18 @@
+PAPER TRAVELS — notices for the Project-X promo subdirectory
+
+Interactive structure, motion, drawing code and the three-dimensional model
+come from Funkierry/the-masses-travels
+(https://github.com/Funkierry/the-masses-travels). That repository does not
+include a license file. This page uses the structure at the Project-X owner's
+request, keeps the attribution, and does not relicense the original.
+
+Three.js 0.180.0 is bundled. Copyright (c) 2010-2025 three.js authors. MIT.
+
+Narrative copy is taken from the public Project-X repository and the promo
+site. Screenshots in assets/px/*.png are copies of images already published
+on the promo site. Files named *.svg in assets/px/ are original stand-ins
+drawn for this page.
+
+Textures and music extracted from the Arknights client are not included.
+Arknights names, artwork and music remain with Hypergryph and the other
+rights holders. This page is not an Arknights work.

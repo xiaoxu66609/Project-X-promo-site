@@ -1,0 +1,25 @@
+{
+  "note": "SVG files in this folder are original stand-ins. Game-client textures and music from the-masses-travels are not included.",
+  "screenshots": [
+    {
+      "file": "app-home.png",
+      "copiedFrom": "Project-X-promo-site/assets/app-home.png"
+    },
+    {
+      "file": "exam-calendar.png",
+      "copiedFrom": "Project-X-promo-site/assets/exam-calendar.png"
+    },
+    {
+      "file": "weekly-audit.png",
+      "copiedFrom": "Project-X-promo-site/assets/weekly-audit.png"
+    },
+    {
+      "file": "skin-paper.png",
+      "copiedFrom": "Project-X-promo-site/assets/skin-paper-edge-preview.png"
+    },
+    {
+      "file": "skin-flat.png",
+      "copiedFrom": "Project-X-promo-site/assets/skin-flat-preview.png"
+    }
+  ]
+}
