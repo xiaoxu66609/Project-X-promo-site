@@ -4,13 +4,14 @@
 
 - **在线地址**：https://xiaoxu66609.github.io/Project-X-promo-site/
 - **交互舞台**：https://xiaoxu66609.github.io/Project-X-promo-site/stage/ （莱茵实验室的场景和动效，内容是本宣传站与主站的纸锋研究）
-- **主仓库**：https://github.com/Dalian-No-5-Middle-School-I-T-C/Project-X
-- **页面**：`index.html`（首页）、`sponsor.html`（赞助页）
-- **设计皮肤**：纸锋 Paper Edge（对齐主仓库 v2.3.0 `design/tokens.css`），支持浅色 / 深色双主题
+- **档案终端**：https://xiaoxu66609.github.io/Project-X-promo-site/lab/ （[RhineLabUI](https://github.com/LBEILC/RhineLabUI) 的三维档案界面。开场标志仍是 RHINE LAB。四十份档案换成 Project-X 主干公开事实，上游提交 `12cc5e4`）
+- **主仓库**：https://github.com/Dalian-No-5-Middle-School-I-T-C/Project-X （README 当前版本 v2.7.1；GitHub Releases 扫描端标签仍为 V1.9.6）
+- **页面**：`index.html`（首页）、`sponsor.html`（赞助页）、`stage/`、`lab/`
+- **设计皮肤**：纸锋 Paper Edge（宣传站样式仍用主仓库 v2.3.0 的纸锋色值），支持浅色 / 深色双主题
 
 ## 本地开发
 
-纯静态站点，无构建产物；Vite 仅作本地服务器使用。
+Pages 发布仓库根目录。`npm run build` 的 `dist/` 只跳回首页，不单独维护第二套文案。Vite 也可作本地服务器。
 
 ```bash
 npm install        # 首次
@@ -32,15 +33,19 @@ index.html / sponsor.html   页面
 style.css                   全站样式（含纸锋皮肤覆盖与响应式）
 main.js                     首页交互（reveal 动效 / 导航高亮 / 主题切换等）
 assets/                     图片资源（logo、截图、海报）
+stage/                      交互舞台静态页
+lab/                        档案终端静态页（RhineLabUI 构建结果）
 sitemap.xml / robots.txt    SEO
 ```
+
+档案终端在上游仓库用 `PAGES_BASE=/Project-X-promo-site/lab/` 构建后，把 `dist/` 放进 `lab/`。资源前缀只走 Vite 的 `base`，不另加一套 CDN 前缀。终端用查询参数切换场景，未知的 `/lab/` 路径由根目录 `404.html` 送回 `/lab/` 并保留查询串。
 
 ## 更新检查单
 
 每次同步主仓库状态时，按序执行：
 
 1. **同步版本与里程碑**
-   - 对照主仓库 `README.md`（公开发布版本）与 `CHANGELOG.md`（已合入未发版里程碑）
+   - 对照主仓库 `README.md` 的当前版本、`CHANGELOG.md`，以及 GitHub Releases 的安装包标签。三者不一定是同一个号
    - 更新 `index.html` 的 hero note、数据带、「最新进度」区块卡片
 2. **替换 / 新增截图**
    - 新图复制到 `assets/`，确认体积与清晰度（竖图注意限高，避免区块过长）
