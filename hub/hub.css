@@ -27,7 +27,7 @@
   box-shadow: 8px 8px 0 #1A1917;
 }
 
-.hub-index {
+.hub-card .hub-index {
   margin: 0;
   font-family: "Geist Mono", ui-monospace, monospace;
   font-size: 12px;
@@ -42,7 +42,7 @@
   font-weight: 800;
 }
 
-.hub-path {
+.hub-card .hub-path {
   margin: 0;
   font-family: "Geist Mono", ui-monospace, monospace;
   font-size: 12px;
@@ -74,8 +74,8 @@ html[data-theme="dark"] .hub-card {
   box-shadow: 8px 8px 0 #F1EFE9;
 }
 
-html[data-theme="dark"] .hub-index { color: #4A5CFF; }
-html[data-theme="dark"] .hub-path { color: rgba(241, 239, 233, 0.5); }
+html[data-theme="dark"] .hub-card .hub-index { color: #4A5CFF; }
+html[data-theme="dark"] .hub-card .hub-path { color: rgba(241, 239, 233, 0.5); }
 html[data-theme="dark"] .hub-card p { color: rgba(241, 239, 233, 0.7); }
 
 @media (max-width: 960px) {
