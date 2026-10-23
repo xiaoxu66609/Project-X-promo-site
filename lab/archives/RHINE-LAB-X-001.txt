@@ -1,4 +1,4 @@
-﻿RHINE LAB · INTERNAL DATABASE
+﻿PROJECT X · INTERNAL DATABASE
 FILE X-001 / 试卷星 Project-X
 PROJECT X
 
@@ -7,7 +7,7 @@ PROJECT X
 相关人物：信息化部
 访问范围：REFERENCE AREA
 
-大连市第五中学信息化部自研的智能试卷管理系统。README 标明的当前版本是 v2.7.1。教师和学生用浏览器，扫描走 Windows 端。校内部署入口是 dl5zx.cn。
+试卷星 Project-X 是大连市第五中学信息化部做的校内阅卷和学情系统，主干 README 的公开版本是 v2.7.1。这一页是三维档案终端：四十份档案写的是主仓库已经公开的事实，场景和开场动画还是原来的。进入系统 https://dl5zx.cn/ ，源码 https://github.com/Dalian-No-5-Middle-School-I-T-C/Project-X 。开场字样是 PROJECT X。教师和学生用浏览器，扫描走 Windows 端。
 
 研究记录
 1. 主干版本以 README 为准，不把旧的 v2.2.1 宣传口径继续写成当前版本。

@@ -17,6 +17,9 @@
         try { sessionStorage.setItem('px-travels-path', path); } catch (e) {}
         location.replace('/Project-X-promo-site/travels/');
       }
+      if (path.indexOf('/Project-X-promo-site/hub/') === 0) {
+        location.replace('/Project-X-promo-site/hub/');
+      }
     })();
   </script>
 </head>

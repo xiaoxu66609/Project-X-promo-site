@@ -4,9 +4,9 @@
 
 - **在线地址**：https://xiaoxu66609.github.io/Project-X-promo-site/
 - **交互入口**：https://xiaoxu66609.github.io/Project-X-promo-site/hub/ （首页导航只留这一个入口。三套页面仍各自运行，页内同一条小路可以回到入口或去另外两处）
-- **交互舞台**：https://xiaoxu66609.github.io/Project-X-promo-site/stage/ （莱茵实验室的场景和动效，内容是本宣传站与主站的纸锋研究）
-- **档案终端**：https://xiaoxu66609.github.io/Project-X-promo-site/lab/ （[RhineLabUI](https://github.com/LBEILC/RhineLabUI) 的三维档案界面。开场标志仍是 RHINE LAB。四十份档案换成 Project-X 主干公开事实，上游提交 `12cc5e4`）
-- **纸上行记**：https://xiaoxu66609.github.io/Project-X-promo-site/travels/ （the-masses-travels 的图版、行迹、图谱和可拆结构，内容换成试卷星公开说明。游戏贴图与音乐没有收录）
+- **交互舞台**：https://xiaoxu66609.github.io/Project-X-promo-site/stage/ （原来的 WebGL 场景和动效。十四段研究写 Project-X，开场词标是 PROJECT X。公开版本 v2.7.1）
+- **档案终端**：https://xiaoxu66609.github.io/Project-X-promo-site/lab/ （[RhineLabUI](https://github.com/LBEILC/RhineLabUI) 的三维档案界面，上游提交 `12cc5e4`。开场词标改成 PROJECT X。四十份档案是 Project-X 主干公开事实）
+- **纸上行记**：https://xiaoxu66609.github.io/Project-X-promo-site/travels/ （the-masses-travels 的图版、行迹、图谱和可拆结构。行迹关卡按能力落地的先后排列，从 2026-06-07 建库开始。游戏贴图与音乐没有收录）
 - **主仓库**：https://github.com/Dalian-No-5-Middle-School-I-T-C/Project-X （README 当前版本 v2.7.1；GitHub Releases 扫描端标签仍为 V1.9.6）
 - **页面**：`index.html`（首页）、`hub/`（交互入口）、`sponsor.html`（赞助页）、`stage/`、`lab/`、`travels/`
 - **设计皮肤**：纸锋 Paper Edge（宣传站样式仍用主仓库 v2.3.0 的纸锋色值），支持浅色 / 深色双主题
@@ -46,7 +46,7 @@ sitemap.xml / robots.txt    SEO
 
 档案终端在上游仓库用 `PAGES_BASE=/Project-X-promo-site/lab/` 构建后，把 `dist/` 放进 `lab/`。资源前缀只走 Vite 的 `base`，不另加一套 CDN 前缀。服务工作线程的 scope 仍是 `/Project-X-promo-site/lab/`。终端用查询参数切换场景，未知的 `/lab/` 路径由根目录 `404.html` 送回 `/lab/` 并保留查询串。
 
-纸上行记在 the-masses-travels 里用 `PAGES_BASE=/Project-X-promo-site/travels/` 构建后，把 `dist/` 放进 `travels/`。未知的 `/travels/` 路径由同一个 `404.html` 记下地址，再回到 `/travels/` 恢复。未知的 `/stage/` 路径同样由这个 `404.html` 记下地址再回到 `/stage/`。`hub/` 是静态页，不走这套恢复。
+纸上行记在 the-masses-travels 里用 `PAGES_BASE=/Project-X-promo-site/travels/` 构建后，把 `dist/` 放进 `travels/`。未知的 `/travels/` 路径由同一个 `404.html` 记下地址，再回到 `/travels/` 恢复。未知的 `/stage/` 路径同样由这个 `404.html` 记下地址再回到 `/stage/`。未知的 `/hub/` 路径送回 `/hub/`。
 
 ## 更新检查单
 

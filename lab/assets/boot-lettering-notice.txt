@@ -4,7 +4,7 @@ Novecento Sans Wide, designed by Jan Tonellato / Synthview Type Design.
 https://typography.synthview.com/novecento-sans-font-family.php
 
 Normal, DemiBold and Bold were used to draw the fixed English phrases in the
-opening and the fixed RHINE LAB corner heading.
+opening and the PROJECT X corner heading.
 The source repository contains pre-authored phrase graphics. A separately
 licensed local build may include the official MyFonts webfont kit and render
 these phrases using its original WOFF2 files. The kit is excluded from Git.
